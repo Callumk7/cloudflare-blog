@@ -1,5 +1,6 @@
 {
   "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["functions/**/*"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "isolatedModules": true,
@@ -13,7 +14,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./app/*"]
+      "@/*": ["./app/*"]
     },
     "skipLibCheck": true,
 

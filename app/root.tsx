@@ -1,5 +1,5 @@
+import stylesheet from "@/tw.css";
 import type { LinksFunction } from "@remix-run/cloudflare";
-import { cssBundleHref } from "@remix-run/css-bundle";
 import {
   Links,
   LiveReload,
@@ -8,9 +8,14 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { Navbar } from "./components/navigation/navbar";
 
 export const links: LinksFunction = () => [
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+  { rel: "stylesheet", href: stylesheet },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400&family=Syne:wght@400;700;800&display=swap",
+  },
 ];
 
 export default function App() {
@@ -22,7 +27,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-background text-foreground font-grotesk">
+        <Navbar />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
