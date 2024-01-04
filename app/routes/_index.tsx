@@ -1,10 +1,20 @@
 import { PostPreview } from "@/components/posts/post-preview";
-import { getAllPostData } from "@/features/posts/get-posts";
-import { LoaderFunctionArgs, json } from "@remix-run/node";
+import { LoaderFunctionArgs, json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
 
-export const loader = (_args: LoaderFunctionArgs) => {
-  const posts = getAllPostData();
+interface ENV {
+  BLOG_POSTS: KVNamespace;
+  UNSPLASH_ACCESS_KEY: string;
+}
+
+///
+/// LOADER
+///
+export const loader = async ({ context }: LoaderFunctionArgs) => {
+  const env = context.env as ENV;
+
+  const posts = await env.BLOG_POSTS.list();
+
   return json({ posts });
 };
 
@@ -26,9 +36,7 @@ export default function AppIndex() {
           </div>
           <div className="divide-y divide-gray-200 dark:divide-gray-700">
             <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-              {posts.map((post) => (
-                <PostPreview key={post.slug} post={post} />
-              ))}
+              {JSON.stringify(posts.keys)}
             </div>
           </div>
         </div>
