@@ -1,5 +1,4 @@
-import { getPostsByTag } from "@/api/posts";
-import { getTags } from "@/api/tags";
+import { getPostTags, getPostsByTag } from "@/api/posts";
 import { PostPreview } from "@/components/posts/post-preview";
 import { TagList } from "@/components/tags/tag-list";
 import { LoaderFunctionArgs, json, redirect } from "@remix-run/cloudflare";
@@ -13,7 +12,7 @@ export const loader = async ({ context, params }: LoaderFunctionArgs) => {
   }
 
   const posts = await getPostsByTag(context, tag);
-  const tags = await getTags(context);
+  const tags = await getPostTags(context);
 
   return json({ posts, tags });
 };

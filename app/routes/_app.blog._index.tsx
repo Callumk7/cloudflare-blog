@@ -1,5 +1,4 @@
-import { getAllPostData } from "@/api/posts";
-import { getTags } from "@/api/tags";
+import { getAllPostData, getPostTags } from "@/api/posts";
 import { Title } from "@/components/layout/title";
 import { PostPreview } from "@/components/posts/post-preview";
 import { TagList } from "@/components/tags/tag-list";
@@ -8,7 +7,7 @@ import { useLoaderData } from "@remix-run/react";
 
 export const loader = async ({ context }: LoaderFunctionArgs) => {
   const posts = await getAllPostData(context);
-  const tags = await getTags(context);
+  const tags = await getPostTags(context);
 
   return json({ posts, tags });
 };
