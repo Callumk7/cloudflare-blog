@@ -21,3 +21,21 @@ export const getAllPostData = async (
 
 	return posts;
 };
+
+export const getPostsByTag = async (
+	context: AppLoadContext,
+	tag: string,
+): Promise<Post[]> => {
+	const allPosts = await getAllPostData(context);
+	const filteredPosts = allPosts.filter((post) => post.tags.includes(tag));
+
+	return filteredPosts;
+};
+
+export const getPostBySlug = async (context: AppLoadContext, slug: string) => {
+	const posts = await getAllPostData(context);
+
+	const post = posts.find((post) => post.slug === slug);
+
+	return post;
+};
