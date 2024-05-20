@@ -2,9 +2,29 @@ import path from "path";
 import fs, { PathLike } from "fs";
 import matter from "gray-matter";
 import { markdownToHtml } from "./markdown-to-html";
-import { Post, Tags } from "@/types";
+import { Post, Project, Tags } from "@/types";
 import Cloudflare from "cloudflare";
 import { ACCOUNT_ID, API_KEY, NAMESPACE_ID } from "const";
+
+function checkRequiredFields(fields: Record<string, unknown>) {
+	const fieldNames = [
+		"name",
+		"shortName",
+		"description",
+		"githubUrl",
+		"coverImageUrl",
+		"tags",
+		"caseStudyUrl",
+		"tech",
+		"wip",
+	];
+
+	fieldNames.forEach((field) => {
+		if (fields[field] === undefined || fields[field] === null) {
+			throw new Error(`The '${field}' field is missing`);
+		}
+	});
+}
 
 const createSlug = (title: string) => {
 	let slug = "";
@@ -58,6 +78,53 @@ const getPostDataFromFile = async (filePath: PathLike): Promise<Post> => {
 	};
 };
 
+const getProjectDataFromFile = async (filePath: PathLike): Promise<Project> => {
+	const fileContent = fs.readFileSync(filePath, "utf8");
+
+	const { data, content } = matter(fileContent);
+	if (!content || !data) {
+		throw new Error("File missing required content");
+	}
+
+	checkRequiredFields(data);
+
+	// perform the content transformation here, to improve request time
+	const htmlContent = await markdownToHtml(content);
+
+	const {
+		name,
+		shortName,
+		description,
+		projectUrl,
+		githubUrl,
+		coverImageUrl,
+		tags,
+		caseStudyUrl,
+		tech,
+		wip,
+		cvDescription,
+	} = data;
+
+	const slug = createSlug(name as string);
+
+	console.log(`data retrieved for ${name}`);
+	return {
+		name,
+		shortName,
+		description,
+		projectUrl,
+		githubUrl,
+		coverImageUrl,
+		tags,
+		caseStudyUrl,
+		content: htmlContent,
+		slug,
+		tech,
+		wip,
+		cvDescription,
+	};
+};
+
 const getFilenamesFromFolder = (folder: string): string[] => {
 	const fullPath = path.join(process.cwd(), folder);
 	const files = fs.readdirSync(fullPath, "utf8");
@@ -86,7 +153,7 @@ const writeTagsToFile = (tags: string[], fileName: string) => {
 	return tagsObj;
 };
 
-const buildJson = async (postFolder: string) => {
+const buildJson = async (postFolder: string, projectsFolder: string) => {
 	const postFileNames = getFilenamesFromFolder(postFolder);
 	let postData: Post[] = [];
 	const postPromises = [];
@@ -106,10 +173,35 @@ const buildJson = async (postFolder: string) => {
 	}
 
 	// Don't really need this anymore
-	const tagData = writeTagsToFile(postTags, "app/data/posts/tags.json");
+	const postTagData = writeTagsToFile(postTags, "app/data/posts/tags.json");
 	writeToFile(postData, "app/data/posts/posts.json");
 
-	return { postData, tagData };
+	const projectFileNames = getFilenamesFromFolder(projectsFolder);
+	let projectsData: Project[] = [];
+	const projectPromises = [];
+	for (const fileName of projectFileNames) {
+		console.log(`Getting data from ${fileName}`);
+		projectPromises.push(
+			getProjectDataFromFile(
+				path.join(process.cwd(), projectsFolder, fileName),
+			),
+		);
+	}
+
+	projectsData = await Promise.all(projectPromises);
+	console.log("all data retrieved");
+
+	const projectTags: string[] = [];
+	for (const project of projectsData) {
+		project.tags.forEach((tag) => projectTags.push(tag));
+	}
+
+	const projectTagData = writeTagsToFile(
+		projectTags,
+		"app/data/projects/tags.json",
+	);
+	writeToFile(projectsData, "app/data/projects/projects.json");
+	return { postData, postTagData, projectsData, projectTagData };
 };
 
 async function main() {
@@ -117,7 +209,8 @@ async function main() {
 		apiToken: API_KEY,
 	});
 
-	const { postData, tagData } = await buildJson("posts");
+	const { postData, postTagData, projectsData, projectTagData } =
+		await buildJson("posts", "projects");
 	const params: Cloudflare.KV.Namespaces.BulkUpdateParams = {
 		account_id: ACCOUNT_ID,
 		body: [
@@ -128,8 +221,18 @@ async function main() {
 			},
 			{
 				base64: false,
-				key: "tagData",
-				value: JSON.stringify(tagData),
+				key: "postTagData",
+				value: JSON.stringify(postTagData),
+			},
+			{
+				base64: false,
+				key: "projectData",
+				value: JSON.stringify(projectsData),
+			},
+			{
+				base64: false,
+				key: "projectTagData",
+				value: JSON.stringify(projectTagData),
 			},
 		],
 	};
