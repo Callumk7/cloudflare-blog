@@ -1,0 +1,149 @@
+[
+  {
+    "name": "AI Integrated Tabletop Notes",
+    "shortName": "ainotes",
+    "description": "Relational notes, with an exploration into how to integrate structured ai LLM in a meaningful way.",
+    "projectUrl": "https://callum.kloos.com",
+    "githubUrl": "https://github.com/Callumk7/ai-notes",
+    "coverImageUrl": "http://image.com",
+    "tags": [
+      "react",
+      "remix",
+      "ai"
+    ],
+    "caseStudyUrl": "link to article on this project",
+    "content": "<p>A weekend project experimenting with some tech that I hadn't had a chance to touch previously:</p>\n<ol>\n<li>Cloudflare Pages as a deploy target,</li>\n<li>Open source AI models through Cloudflare ai,</li>\n<li>Turso database</li>\n</ol>",
+    "slug": "ai-integrated-tabletop-notes",
+    "tech": [
+      "react",
+      "remix",
+      "typescript"
+    ],
+    "wip": true,
+    "cvDescription": "I built an entirely custom portfolio website using React and Remix. I wrote a custom build process which parses markdown content and caches the output into simple JSON for the app to consume on request with response times of less than 7ms."
+  },
+  {
+    "name": "playQ Videogame Playlist Manager",
+    "shortName": "playq",
+    "description": "Create and share playlists to keep track of what you have been playing",
+    "projectUrl": "https://playq.xyz",
+    "githubUrl": "https://github.com/Callumk7/frontline-v2-remix",
+    "coverImageUrl": "http://image.com",
+    "tags": [
+      "react",
+      "remix",
+      "cloudflare",
+      "supabase",
+      "typescript"
+    ],
+    "caseStudyUrl": "/blog/introducing-playq-a-cuttingedge-videogame-playlist-manager",
+    "content": "<h2>Introduction to playQ</h2>\n<p>PlayQ is a game management application that allows users to create and track lists of video games, known as playlists. It provides a comprehensive platform for users to keep track of games they've played, want to play, or are currently playing.</p>\n<p>Moreover, you can rate the games on a personal scale, adding another layer of information to your lists. This functionality also allows for a comparative analysis between different games based on user ratings.</p>\n<p>This app promotes social interaction by allowing users to share their game playlists with friends or publicly. This makes it easier for users to discover new games and understand their friends' gaming preferences. PlayQ aims to facilitate easier decision-making when it comes to choosing the next game to play.</p>\n<h2>playQ - A Learning Project</h2>\n<p>PlayQ is not just a game playlist management app, it's also a comprehensive learning project that incorporates a variety of advanced technologies:</p>\n<p><strong>Supabase</strong> - PlayQ uses Supabase for authentication and database management. Supabase is an open-source Firebase alternative that replicates some of its features like real-time subscriptions and auto-generated APIs, while offering the versatility of PostgreSQL.</p>\n<p><strong>Remix and React</strong> - The user interface (UI), routing, and data loading are built with Remix and React. Remix is a powerful web framework for React that priorities user experience, while React facilitates building reusable UI components efficiently.</p>\n<p><strong>DrizzleORM</strong> - The app's Object-Relational Mapping (ORM) is handled by DrizzleORM. With DrizzleORM, JavaScript objects are mapped to database tables, simplifying data operations like inserting, updating, or querying data.</p>\n<p><strong>Radix-UI and Shad/cn Inspired Components</strong> - To further refine the user interface, the app uses Radix-UI, a library of low-level, accessible and unstyled UI components for building high-quality web interfaces. The UI design is also influenced by ShaD/CN styled-components, favouring a modern and minimalist aesthetic.</p>\n<p>By using these technologies, PlayQ showcases how sophisticated tech stacks can be combined for efficient coding practices and superior user experience.</p>",
+    "slug": "playq-videogame-playlist-manager",
+    "tech": [
+      "react",
+      "postgres",
+      "remix",
+      "supabase",
+      "nodejs",
+      "typescript",
+      "cloudflare"
+    ],
+    "wip": false,
+    "cvDescription": "I built a playlist management solution that supports server side rendering (SSR), user authentication, aggregated scores and ratings, and a user activity feed. The app uses React and Remix as the full stack framework, with some additional asyncronous tasks offloaded to a cloudflare application."
+  },
+  {
+    "name": "My Developer Portfolio",
+    "shortName": "portfolio",
+    "description": "This website! A space to showcase my completed and in-progress projects, host my blog, and share my photography",
+    "projectUrl": "https://callum.kloos.com",
+    "githubUrl": "https://github.com/Callumk7/callum-blog-remix",
+    "coverImageUrl": "http://image.com",
+    "tags": [
+      "react",
+      "remix"
+    ],
+    "caseStudyUrl": "link to article on this project",
+    "content": "<p>As a self-taught web developer, I needed a space to showcase my projects and skills to the world. I built this site to do just that.</p>\n<p>The site itself is built with the Remix framework (my full stack framework of choice), and all the code is available open source on Github.</p>\n<p>I opted for a clean, modern design. I want to keep things simple, and make sure that the content is front and centre. For more thoughts on the design, see my introduction blog post.</p>\n<p>I built a custom pipeline for building a JSON data schema from markdown blog posts using <code>matter</code> and <code>remark</code>. This means I have no external dependencies or database ORM to worry about, and all my inputs are fully typed with Typescript.</p>\n<p>Please enjoy exploring, and send me a message with any thoughts that you have.</p>",
+    "slug": "my-developer-portfolio",
+    "tech": [
+      "react",
+      "remix",
+      "typescript"
+    ],
+    "wip": false,
+    "cvDescription": "I built an entirely custom portfolio website using React and Remix. I wrote a custom build process which parses markdown content and caches the output into simple JSON for the app to consume on request with response times of less than 7ms."
+  },
+  {
+    "name": "ReCollect Social Journalling",
+    "shortName": "recollect",
+    "description": "Build a habit, remember together",
+    "projectUrl": "https://recollect.dev",
+    "githubUrl": "https://github.com/Callumk7/frontline-v2-remix",
+    "coverImageUrl": "http://image.com",
+    "tags": [
+      "react",
+      "remix",
+      "cloudflare",
+      "supabase",
+      "typescript"
+    ],
+    "caseStudyUrl": "/blog/introducing-playq-a-cuttingedge-videogame-playlist-manager",
+    "content": "<h2>Introduction to playQ</h2>\n<p>PlayQ is a game management application that allows users to create and track lists of video games, known as playlists. It provides a comprehensive platform for users to keep track of games they've played, want to play, or are currently playing.</p>\n<p>Moreover, you can rate the games on a personal scale, adding another layer of information to your lists. This functionality also allows for a comparative analysis between different games based on user ratings.</p>\n<p>This app promotes social interaction by allowing users to share their game playlists with friends or publicly. This makes it easier for users to discover new games and understand their friends' gaming preferences. PlayQ aims to facilitate easier decision-making when it comes to choosing the next game to play.</p>\n<h2>playQ - A Learning Project</h2>\n<p>PlayQ is not just a game playlist management app, it's also a comprehensive learning project that incorporates a variety of advanced technologies:</p>\n<p><strong>Supabase</strong> - PlayQ uses Supabase for authentication and database management. Supabase is an open-source Firebase alternative that replicates some of its features like real-time subscriptions and auto-generated APIs, while offering the versatility of PostgreSQL.</p>\n<p><strong>Remix and React</strong> - The user interface (UI), routing, and data loading are built with Remix and React. Remix is a powerful web framework for React that priorities user experience, while React facilitates building reusable UI components efficiently.</p>\n<p><strong>DrizzleORM</strong> - The app's Object-Relational Mapping (ORM) is handled by DrizzleORM. With DrizzleORM, JavaScript objects are mapped to database tables, simplifying data operations like inserting, updating, or querying data.</p>\n<p><strong>Radix-UI and Shad/cn Inspired Components</strong> - To further refine the user interface, the app uses Radix-UI, a library of low-level, accessible and unstyled UI components for building high-quality web interfaces. The UI design is also influenced by ShaD/CN styled-components, favouring a modern and minimalist aesthetic.</p>\n<p>By using these technologies, PlayQ showcases how sophisticated tech stacks can be combined for efficient coding practices and superior user experience.</p>\n<h2>Database Design</h2>\n<p>![[Database design.svg]]\nUtilised a many to many database design to enable many key features of the collection manager.</p>",
+    "slug": "recollect-social-journalling",
+    "tech": [
+      "react",
+      "postgres",
+      "remix",
+      "supabase",
+      "nodejs",
+      "typescript",
+      "cloudflare"
+    ],
+    "wip": true
+  },
+  {
+    "name": "Spotify Shared Playlists",
+    "shortName": "spotifysharedplaylists",
+    "description": "A weekend project that allows friends to create joint playlists, that can be easily filtered to create playback vibes. Useful for sharing who you are interested in seeing at festivals.",
+    "projectUrl": "https://spotify-playlists-bs5.pages.dev",
+    "githubUrl": "https://github.com/Callumk7/spotify-playlists",
+    "coverImageUrl": "http://image.com",
+    "tags": [
+      "cloudflare",
+      "remix"
+    ],
+    "caseStudyUrl": "link to article on this project",
+    "content": "<p>A weekend project experimenting with</p>\n<ol>\n<li>using an external oAuth flow for user authentication via cookies</li>\n<li>using cloudflare and d1 for a serverless deployment</li>\n<li>vite as a bundler for remix apps</li>\n<li>caching using cloudflare kv</li>\n</ol>",
+    "slug": "spotify-shared-playlists",
+    "tech": [
+      "cloudflare",
+      "remix",
+      "d1"
+    ],
+    "wip": true,
+    "cvDescription": "A weekend project that allows friends to create joint playlists, that can be easily filtered to create playback vibes. Useful for sharing who you are interested in seeing at festivals."
+  },
+  {
+    "name": "This Little Piggy Richmond",
+    "shortName": "thislittlepiggyrichmond",
+    "description": "Animal Rescue Charity focusing on Guinea Pigs",
+    "projectUrl": "https://thislittlepiggyrichmond.co.uk",
+    "githubUrl": "https://github.com/Callumk7/my-little-piggy-homepage",
+    "coverImageUrl": "http://image.com",
+    "tags": [
+      "react",
+      "ssr",
+      "nextjs"
+    ],
+    "caseStudyUrl": "link to article on this project",
+    "content": "<p><strong>Introduction</strong></p>\n<p><strong>This Little Piggy Richmond</strong> is a local charity dedicated to the rescue and rehoming of vulnerable guinea pigs throughout London and beyond. They operate a responsible rehoming scheme, ensuring that each guinea pig is placed in a safe, sustainable environment.</p>\n<p><strong>Need</strong></p>\n<p>The organization approached us, seeking a website with excellent SEO performance and discoverability within their specific sector. An essential requirement was the provision of an online platform where potential adopters could view recently rescued guinea pigs, including those that need companionship due to their social nature. The guarantor required this site to be dynamic, user-friendly and capable of frequent updates, as changes were anticipated multiple times a week. Additionally, it was critical that the site be fully responsive and accessible.</p>\n<p><strong>Solution</strong></p>\n<p>Due to the client's non-technical background, we aimed to integrate a user-friendly, no-code solution to serve as the data source for the new application. We contemplated using a purpose-built CMS. However, upon careful deliberation, it was clear that such a solution might bring unnecessary complexity and a surplus of features. Thus, we chose to utilize a simple Notion database; it offers a comprehensive API allowing both writing and access to data, adequately fulfilling the identified needs.</p>\n<p><strong>Dynamic Data</strong></p>\n<p>For the web application to remain relevant and timely, it was crucial to facilitate dynamic data representation, updated at the point of request. Therefore, a server-side rendering approach was more suitable than a built-dependent statically generated approach, although the latter might have been more performant.</p>\n<p><strong>Technology Utilised</strong></p>\n<table>\n<thead>\n<tr>\n<th>Requirement</th>\n<th>Selection</th>\n<th>Justification</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Front-end Framework</td>\n<td>Next.js</td>\n<td>Flexible with rendering options, allows for future scalability</td>\n</tr>\n<tr>\n<td>Database</td>\n<td>Notion</td>\n<td>User-friendly interface, enabling rapid development by bypassing the need for a separate admin panel</td>\n</tr>\n<tr>\n<td>Hosting</td>\n<td>Vercel</td>\n<td>Tightly integrated with Next.js, offering a free-tier that aligns with the client's expected usage</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Conclusion</strong></p>\n<p>In conclusion, the successful implementation of this project not only provided a significant online presence for 'This Little Piggy Richmond' but also met the specific requirements of the client with precision. Leveraging the user-friendly interface of Notion and the flexibility of Next.js, we were able to create a dynamic, accessible, and easy-to-update platform. This accomplishment empowers the organization to continue their noble cause of rescuing and rehoming guinea pigs seamlessly. Furthermore, the selection of technologies underpins the site’s sustainability, ensuring scalability to match the organization's future growth.</p>",
+    "slug": "this-little-piggy-richmond",
+    "tech": [
+      "react",
+      "nextjs",
+      "notion"
+    ],
+    "wip": false,
+    "cvDescription": "I built a client-facing website that utilises Notion as a backend to facilitate dynamic content updates without the need for a complex CMS solution. Data on the inventory can be changed by the client and seen instantly without a build step. Built with Next.js and deployed to Vercel."
+  }
+]
