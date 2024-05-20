@@ -34,6 +34,7 @@ export async function getRandomPhotos(
 	return json as Photo[];
 }
 
+// NOT USED
 export async function getPhotoWithId(context: AppLoadContext, id: string) {
 	const endpoint = "photos";
 	const requestUrl = url + "/" + endpoint + "/" + id;
