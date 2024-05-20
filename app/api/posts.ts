@@ -1,4 +1,4 @@
-import { Post } from "@/types";
+import { Post, Tags } from "@/types";
 import { AppLoadContext } from "@remix-run/cloudflare";
 
 export const getAllPostData = async (
@@ -20,6 +20,17 @@ export const getAllPostData = async (
 	});
 
 	return posts;
+};
+
+export const getPostTags = async (context: AppLoadContext): Promise<Tags> => {
+	const tagData = await context.cloudflare.env.POSTS.get("tagData");
+
+	if (!tagData) {
+		return {};
+	}
+
+	const tags: Tags = JSON.parse(tagData);
+	return tags;
 };
 
 export const getPostsByTag = async (

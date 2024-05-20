@@ -1,3 +1,4 @@
+import { getAllProjectData } from "@/api/projects";
 import { SkillsList } from "@/components/cv/skills-list";
 import { WorkExperience } from "@/components/cv/work-experience";
 import { Card } from "@/components/layout/card";
@@ -7,10 +8,11 @@ import { Separator } from "@/components/layout/separator";
 import { Title } from "@/components/layout/title";
 import { SocialLinks } from "@/components/navigation/social-links";
 import { Project } from "@/types";
+import { LoaderFunctionArgs, json } from "@remix-run/cloudflare";
 import { Link, useLoaderData } from "@remix-run/react";
 
-export const loader = () => {
-  const allProjects = getAllProjectData();
+export const loader = async ({ context }: LoaderFunctionArgs) => {
+  const allProjects = await getAllProjectData(context);
   const projects = allProjects.filter((project) => !project.wip);
 
   return json({ projects });
@@ -42,14 +44,15 @@ export default function CVRoute() {
         <H2>Web Developer and Product Designer</H2>
         <p className="pb-7">
           Self motivated and ambitious web developer who has built complex web
-          applications from the ground up with HTML, CSS, Typescript and React. Ex.
-          Product manager with four years of experience, I am seeking new opportunities in
-          a technical web development role.
+          applications from the ground up with HTML, CSS, Typescript and React.
+          Ex. Product manager with four years of experience, I am seeking new
+          opportunities in a technical web development role.
         </p>
         <div className="flex justify-between">
           <SocialLinks />
           <p>
-            <span className="mr-5">Prefer a PDF copy?</span> <DownloadCVButton />
+            <span className="mr-5">Prefer a PDF copy?</span>{" "}
+            <DownloadCVButton />
           </p>
         </div>
       </Card>
@@ -67,18 +70,25 @@ export default function CVRoute() {
             dateTo={new Date("2020-09-01")}
           >
             <div>
-              Dedicated full-time hours to immerse myself in the craft of web development.
-              Built{" "}
-              <Link className="link" to={"/projects/playq-videogame-playlist-manager"}>
+              Dedicated full-time hours to immerse myself in the craft of web
+              development. Built{" "}
+              <Link
+                className="link"
+                to={"/projects/playq-videogame-playlist-manager"}
+              >
                 playQ
               </Link>{" "}
               to touch all aspects of the web development pipeline. Built{" "}
-              <Link className="link" to={"/projects/this-little-piggy-richmond"}>
+              <Link
+                className="link"
+                to={"/projects/this-little-piggy-richmond"}
+              >
                 This Little Piggy
               </Link>{" "}
-              for a local animal rescue charity. Built a personal portfolio. During this
-              time I have become proficient with React, Remix, Serverless and serverful
-              deployment environments, api design and database design.
+              for a local animal rescue charity. Built a personal portfolio.
+              During this time I have become proficient with React, Remix,
+              Serverless and serverful deployment environments, api design and
+              database design.
             </div>
           </WorkExperience>
           <WorkExperience
@@ -87,9 +97,10 @@ export default function CVRoute() {
             dateFrom={new Date("2019-07-01")}
             dateTo={new Date("2020-09-01")}
           >
-            Worked freelance as a Product Designer on an angel funded game development
-            platform. I helped to shape the initial product strategy, and lay the initial
-            design foundations for user testing and future development.
+            Worked freelance as a Product Designer on an angel funded game
+            development platform. I helped to shape the initial product
+            strategy, and lay the initial design foundations for user testing
+            and future development.
           </WorkExperience>
           <WorkExperience
             institution="Receipt Bank"
@@ -97,14 +108,15 @@ export default function CVRoute() {
             dateFrom={new Date("2019-07-01")}
             dateTo={new Date("2020-09-01")}
           >
-            Product Manager at a fast paced, high growth company using artificial
-            intelligence to disrupt the accounting space. Joined after series B funding
-            through to a successful series C and later acquisition. I used agile
-            methodologies, collaborated with a multi-disciplinary team, and managed the
-            inception, research, testing, and iteration of features and initiatives which
-            lead to the release of the companies first automated submission method,
-            automated documentation fetching and bank integration, and the initiation of
-            product led engagement and retention strategies.
+            Product Manager at a fast paced, high growth company using
+            artificial intelligence to disrupt the accounting space. Joined
+            after series B funding through to a successful series C and later
+            acquisition. I used agile methodologies, collaborated with a
+            multi-disciplinary team, and managed the inception, research,
+            testing, and iteration of features and initiatives which lead to the
+            release of the companies first automated submission method,
+            automated documentation fetching and bank integration, and the
+            initiation of product led engagement and retention strategies.
           </WorkExperience>
         </div>
         <div className="col-span-2 w-full space-y-3 lg:col-span-1">

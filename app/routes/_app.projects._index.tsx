@@ -1,12 +1,12 @@
+import { getAllProjectData } from "@/api/projects";
 import { Container } from "@/components/layout/container";
 import { Title } from "@/components/layout/title";
 import { ProjectTable } from "@/components/projects/project-table";
-import { getAllProjectData } from "@/features/projects/get-projects";
-import { json } from "@remix-run/node";
+import { LoaderFunctionArgs, json } from "@remix-run/cloudflare";
 import { Link, useLoaderData } from "@remix-run/react";
 
-export const loader = () => {
-  const allProjects = getAllProjectData();
+export const loader = async ({ context }: LoaderFunctionArgs) => {
+  const allProjects = await getAllProjectData(context);
 
   const projects = allProjects.filter((project) => !project.wip);
 
@@ -21,8 +21,9 @@ export default function ProjectsIndex() {
       <Title title="Projects" />
       <div className="prose prose-invert max-w-none">
         <p>
-          Take a look at some of the projects that I have been working on recently. Do let
-          me know if you see anything that you like. In addition, feel free to checkout my{" "}
+          Take a look at some of the projects that I have been working on
+          recently. Do let me know if you see anything that you like. In
+          addition, feel free to checkout my{" "}
           <Link to={"/projects/wip"} className="link">
             Work In Progress
           </Link>{" "}
