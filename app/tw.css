@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--background: 180 5% 4%;
+	--foreground: 65 17% 92%;
+
+	--background-hover: 180 5% 6%;
+	--background-hover-light: 180 6% 15%;
+	--background-accent: 180 3% 15%;
+
+	--primary-1: 67 100% 84%;
+	--primary-2: 67 100% 76%;
+	--primary-3: 67 95% 67%;
+
+	--ring: 65 8% 95%;
+	--accent: 180 5% 10%;
+}
+
+/* some default styles */
+@layer base {
+	.link {
+		@apply text-primary-1 underline transition-colors ease-in-out hover:text-violet-400;
+	}
+}
+
+/* Sidebar styling for different browsers */
+html {
+	overflow-y: scroll;
+	scrollbar-width: thin; /* for firefox */
+	scrollbar-color: hsl(var(--primary-2)) hsl(var(--background)); /* for firefox */
+}
+
+::-webkit-scrollbar {
+	width: 6px; /* for vertical scrollbars */
+	height: 6px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+	background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+	background: hsl(var(--primary-2));
+	border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: hsl(var(--primary-1));
+}
