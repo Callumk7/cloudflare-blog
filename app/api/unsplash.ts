@@ -1,9 +1,10 @@
 import { Photo } from "@/types";
+import { AppLoadContext } from "@remix-run/cloudflare";
 
 const url = "https://api.unsplash.com";
-const UNSPLASH_ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY!;
 
 export async function getRandomPhotos(
+	context: AppLoadContext,
 	count: number,
 	orientation: string,
 	query?: string,
@@ -25,7 +26,7 @@ export async function getRandomPhotos(
 	const res = await fetch(requestUrl, {
 		method: "GET",
 		headers: {
-			Authorization: `Client-ID ${UNSPLASH_ACCESS_KEY}`,
+			Authorization: `Client-ID ${context.cloudflare.env.UNSPLASH_ACCESS_KEY}`,
 		},
 	});
 
@@ -33,14 +34,14 @@ export async function getRandomPhotos(
 	return json as Photo[];
 }
 
-export async function getPhotoWithId(id: string) {
+export async function getPhotoWithId(context: AppLoadContext, id: string) {
 	const endpoint = "photos";
 	const requestUrl = url + "/" + endpoint + "/" + id;
 
 	const res = await fetch(requestUrl, {
 		method: "GET",
 		headers: {
-			Authorization: `Client-ID ${UNSPLASH_ACCESS_KEY}`,
+			Authorization: `Client-ID ${context.cloudflare.env.UNSPLASH_ACCESS_KEY}`,
 		},
 	});
 
