@@ -4,12 +4,12 @@ import { AppLoadContext } from "@remix-run/cloudflare";
 export const getAllProjectData = async (
 	context: AppLoadContext,
 ): Promise<Project[]> => {
-	const projectsData = await context.cloudflare.env.POSTS.get("projectsData");
-	if (!projectsData) {
+	const projectData = await context.cloudflare.env.POSTS.get("projectData");
+	if (!projectData) {
 		return [];
 	}
 
-	const projects: Project[] = JSON.parse(projectsData);
+	const projects: Project[] = JSON.parse(projectData);
 	// posts.sort((a, b) => {
 	// 	const dateA = new Date(a.date);
 	// 	const dateB = new Date(b.date);

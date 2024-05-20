@@ -48,4 +48,6 @@ interface Photo {
 
 type Tags = Record<string, number>;
 
-export type { Post, Project, Author, Tags, Photo };
+type KV_KEYS = "postData" | "postTagData" | "projectData" | "projectTagData";
+
+export type { Post, Project, Author, Tags, Photo, KV_KEYS };
