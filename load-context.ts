@@ -7,7 +7,8 @@ import { type PlatformProxy } from "wrangler";
 // even if no `wrangler.toml` exists.
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Env {
-  POSTS: KVNamespace;
+	POSTS: KVNamespace;
+	UNSPLASH_ACCESS_KEY: string;
 }
 
 type Cloudflare = Omit<PlatformProxy<Env>, "dispose">;
