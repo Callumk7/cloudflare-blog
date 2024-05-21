@@ -8,6 +8,7 @@ import { type PlatformProxy } from "wrangler";
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface Env {
 	POSTS: KVNamespace;
+	S3_URL: "https://ck-portfolio-images.s3.eu-west-2.amazonaws.com";
 	UNSPLASH_ACCESS_KEY: string;
 }
 
