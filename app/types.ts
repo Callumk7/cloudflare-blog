@@ -29,6 +29,7 @@ interface Project {
 	tech: string[];
 	wip: boolean;
 	cvDescription?: string;
+	screenshotCount?: number;
 }
 
 interface Photo {

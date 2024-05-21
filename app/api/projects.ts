@@ -1,9 +1,7 @@
 import { Post, Project, Tags } from "@/types";
 import { AppLoadContext } from "@remix-run/cloudflare";
 
-export const getAllProjectData = async (
-	context: AppLoadContext,
-): Promise<Project[]> => {
+export const getAllProjectData = async (context: AppLoadContext): Promise<Project[]> => {
 	const projectData = await context.cloudflare.env.POSTS.get("projectData");
 	if (!projectData) {
 		return [];
@@ -21,10 +19,7 @@ export const getAllProjectData = async (
 	return projects;
 };
 
-export const getProjectBySlug = async (
-	context: AppLoadContext,
-	slug: string,
-) => {
+export const getProjectBySlug = async (context: AppLoadContext, slug: string) => {
 	const projects = await getAllProjectData(context);
 
 	const project = projects.find((post) => post.slug === slug);
@@ -32,11 +27,8 @@ export const getProjectBySlug = async (
 	return project;
 };
 
-export const getProjectTags = async (
-	context: AppLoadContext,
-): Promise<Tags> => {
-	const projectTagsData =
-		await context.cloudflare.env.POSTS.get("projectTagData");
+export const getProjectTags = async (context: AppLoadContext): Promise<Tags> => {
+	const projectTagsData = await context.cloudflare.env.POSTS.get("projectTagData");
 
 	if (!projectTagsData) {
 		return {};
@@ -58,4 +50,24 @@ export const getProjectPosts = async (
 	const related = posts.filter((post) => post.projectShortName === shortName);
 
 	return related;
+};
+
+export const getProjectImageSrcs = (
+	context: AppLoadContext,
+	project: Project,
+): string[] => {
+	if (!project.screenshotCount) {
+		return [];
+	}
+
+	const { shortName, screenshotCount } = project;
+	const images = [];
+
+	for (let i = 1; i <= screenshotCount; i++) {
+		images.push(
+			`${context.cloudflare.env.S3_URL}/images/projects/${shortName}/${i}.png`,
+		);
+	}
+
+	return images;
 };
