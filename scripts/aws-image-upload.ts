@@ -1,7 +1,7 @@
 import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 
-import { readFileSync, readdirSync, statSync } from "fs";
-import { join, extname, relative } from "path";
+import { readFileSync, readdirSync, statSync } from "node:fs";
+import { join, extname, relative } from "node:path";
 
 import { config } from "dotenv";
 

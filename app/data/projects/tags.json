@@ -1,10 +1,10 @@
 {
-  "react": 5,
-  "remix": 5,
-  "ai": 1,
   "cloudflare": 3,
+  "remix": 5,
+  "react": 5,
   "supabase": 2,
   "typescript": 2,
   "ssr": 1,
-  "nextjs": 1
+  "nextjs": 1,
+  "ai": 1
 }

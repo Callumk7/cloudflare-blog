@@ -11,6 +11,7 @@ related: ["array", "of related", "articles"]
 tech: ["react", "remix", "typescript"]
 wip: false
 cvDescription: "I built an entirely custom portfolio website using React and Remix. I wrote a custom build process which parses markdown content and caches the output into simple JSON for the app to consume on request with response times of less than 7ms."
+screenshotCount: 3
 ---
 
 As a self-taught web developer, I needed a space to showcase my projects and skills to the world. I built this site to do just that.

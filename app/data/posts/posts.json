@@ -1,52 +1,5 @@
 [
   {
-    "title": "Announcement! You can view and download my CV online",
-    "description": "My CV is now available from this website, please do check it out.",
-    "projectShortName": "",
-    "content": "<p>Hey! 👋</p>\n<p>This is just a quick note to let you know that you can find my <a href=\"/cv\">CV online here</a>.</p>\n<p>I am a self taught web developer who is looking for opportunities in a technical role. I have four years experience in Product and UX, and I am proficient in Typescript, React, and a variety of Javascript runtimes. If you like what you see, do let me know and lets connect!</p>",
-    "coverImageUrl": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "date": "2024-03-20",
-    "author": {
-      "name": "Callum Kloos",
-      "imageUrl": "/avatar-scaled.jpg"
-    },
-    "tags": [],
-    "slug": "announcement-you-can-view-and-download-my-cv-online"
-  },
-  {
-    "title": "Introducing playQ: A Cutting-Edge Videogame Playlist Manager",
-    "description": "playQ is a groundbreaking application designed to revolutionize the way gamers organize and share their video game collections. Leveraging the latest technologies, playQ offers an unparalleled experience for managing and exploring video game playlists.",
-    "projectShortName": "playq",
-    "content": "<p>At its core, <a href=\"/projects/playq-videogame-playlist-manager\">playQ</a>  is a sophisticated game management platform that empowers users to create, curate, and share personalized playlists of video games. With an intuitive interface and robust feature set, playQ redefines the way gamers interact with their collections, fostering a more immersive and social gaming experience.</p>\n<p>One of playQ's standout features is its comprehensive rating system, enabling users to assign personal ratings to games within their playlists. This powerful functionality not only allows for in-depth comparisons between titles but also facilitates informed decision-making when selecting the next game to play.</p>\n<p>Additionally, playQ seamlessly integrates social networking capabilities, enabling users to share their meticulously crafted playlists with friends or the broader gaming community. This feature promotes game discovery, fosters meaningful discussions, and cultivates a vibrant community of passionate gamers.\nA Cutting-Edge Tech Stack for an Exceptional User Experience</p>\n<p>playQ is more than just a game playlist manager; it is a testament to the power of modern web development technologies. The application's architecture is built upon a robust stack of industry-leading frameworks and libraries, ensuring optimal performance, scalability, and user experience.</p>\n<p>Supabase: At the core of playQ lies Supabase, an open-source Firebase alternative that provides seamless authentication and database management. Supabase replicates many of Firebase's features, such as real-time subscriptions and auto-generated APIs, while offering the versatility and power of PostgreSQL.</p>\n<p>Remix and React: The user interface (UI), routing, and data loading are powered by the dynamic duo of Remix and React. Remix is a cutting-edge web framework for React that prioritizes user experience, while React facilitates the efficient development of reusable UI components.</p>\n<p>DrizzleORM: playQ's Object-Relational Mapping (ORM) is handled by DrizzleORM, a powerful tool that maps JavaScript objects to database tables, simplifying data operations like inserting, updating, or querying.</p>\n<p>Radix-UI and Shad/cn Inspired Components: To further elevate the user experience, playQ incorporates Radix-UI, a library of low-level, accessible, and unstyled UI components designed for building high-quality web interfaces. The application's UI design is also influenced by the modern and minimalist aesthetic of ShaD/CN styled-components.</p>\n<p>By leveraging this carefully curated tech stack, playQ showcases how sophisticated technologies can be combined to deliver efficient coding practices, superior performance, and an unparalleled user experience.</p>",
-    "coverImageUrl": "/images/projects/playq/1.png",
-    "date": "2024-02-25",
-    "author": {
-      "name": "Callum Kloos",
-      "imageUrl": "/avatar.jpeg"
-    },
-    "tags": [
-      "playQ"
-    ],
-    "slug": "introducing-playq-a-cuttingedge-videogame-playlist-manager"
-  },
-  {
-    "title": "Using Notion as a Simple Content Management System",
-    "description": "This Little Piggy required a simple yet flexible content management solution on a small scale. Notion ticked all the boxes.",
-    "projectShortName": "thislittlepiggyrichmond",
-    "content": "<p>When designing the new website for <a href=\"/projects/this-little-piggy-richmond\">This Little Piggy Richmond</a> , a non-profit organisation dedicated to rehoming guinea pigs, the top priority was a simple and efficient system for adding content to the website. The organisation needed a solution that allowed them to move quickly without being bogged down by complex processes or systems prone to errors and frustration. The website is a crucial part of their work, and the ability to update it promptly was key.</p>\n<h2>The Challenge: High Turnover and Cute Content</h2>\n<p>This Little Piggy Richmond experiences a high turnover of guinea pigs due to the need for pairing, partnering, new arrivals, and high levels of pregnancy. As a result, they required a website that could showcase the cuteness factor of these animals while ensuring that the content remained as up-to-date as possible.</p>\n<h2>The Solution: Notion as a Backend</h2>\n<p>Initially, we considered creating an admin panel tool alongside the public website, allowing the organisation to update the database directly. However, we decided against this approach for several reasons:</p>\n<ol>\n<li><strong>Increased Workload</strong>: Building an admin panel would have doubled the amount of work required, and the need for a new website was urgent.</li>\n<li><strong>Lack of Flexibility</strong>: An admin panel might have been too inflexible during the early stages, where iterations and changes were likely to occur.</li>\n</ol>\n<p>After exploring various options, we had the idea of using Notion as the backend, with all data presented on the front-end being pulled directly from Notion.</p>\n<h2>Considerations and Challenges</h2>\n<p><strong>Open Schema</strong>: Notion has a very flexible and lax data model, as expected from a product of its kind. To ensure data integrity, we had to implement strict measures to lock down the databases that touched the front-end, preventing schema changes. Additionally, we needed to handle any potential issues gracefully on the front-end to maintain the application's availability.</p>\n<p><strong>Dynamic vs. Static</strong>: As the ability to quickly change content on the front-end was crucial for the client, rendering pages dynamically on each visit was the preferred approach. However, it was essential to consider the issue of 'live' data being pulled from Notion before it was ready for publication.</p>\n<p><strong>Data Ownership</strong>: One potential risk of this solution was the ownership of the data. Since Notion is not designed as a database, there was a possibility that they could revoke API access or change their terms to disallow this use case. To mitigate this risk, we implemented data backups and ensured a clear path for data portability.</p>\n<h2>Implementation Details</h2>\n<p><strong>Graceful Error Handling and Fallback Data</strong>: To handle cases where the client had incomplete data in the Notion database, we implemented a solution where our components could handle missing data gracefully. This approach provided informative feedback to the client, allowing them to identify and rectify missing data issues without crashing the entire site.</p>\n<p><strong>Data Syncing</strong>: To ensure data integrity and mitigate potential risks, we set up a daily backup process that synchronised data from Notion to a SQLite database. This backup would enable us to migrate to a different solution if necessary.</p>\n<p><strong>Mark as Ready</strong>: To prevent accidental publishing of incomplete or unready data, we implemented a tagging system in Notion. Only data marked as \"website-ready\" would be pulled and displayed on the front-end.</p>\n<p>By leveraging Notion as the backend and implementing these measures, we were able to provide <a href=\"/projects/this-little-piggy-richmond\">This Little Piggy Richmond</a> with a simple and efficient content management system that met their needs for promptly updating their website with the latest adorable guinea pig content.</p>",
-    "coverImageUrl": "https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2021/02/Notion-logo-1.png",
-    "date": "2024-02-14",
-    "author": {
-      "name": "Callum Kloos",
-      "imageUrl": "/avatar.jpeg"
-    },
-    "tags": [
-      "web development",
-      "backend"
-    ],
-    "slug": "using-notion-as-a-simple-content-management-system"
-  },
-  {
     "title": "An Open Letter to Potential Recruiters",
     "description": "Thank you for stopping by! If you have not read my bespoke cover letter yet, then please enjoy this open letter instead",
     "content": "<p>Dear Potential Employer</p>\n<p>Thank you for showing interest in my application, and welcome to my portfolio. With my multifaceted background in <em>product management</em>, <em>user experience design</em>, mechanical engineering, and <em>web development</em>, complemented by my passion for learning and continuous growth, I am confident in my ability to contribute positively to your team.</p>\n<p>During the last year and a half, I've dedicated my time to learning web development and have developed a proficiency in JavaScript, TypeScript, React, the Remix Framework, Next.js to a lesser extent, and currently experimenting with Hono Framework for lightweight data APIs. The culmination of my effort is evident in two apps I conceptualised and developed. The first app - PlayQ is a full-stack web application for sharing video game playlists with enhanced interactivity, the other being a dynamic content module for a local charity.</p>\n<p>My previous role as a Product Manager and UX Designer has given me invaluable experience working in agile environments, understanding the technical nuances from a development perspective, and leading cross-functional teams to deliver projects efficiently. My innate empathy aids in building productive relationships fostering a cooperative work culture.</p>\n<p>I strongly believe that the skills I garnered from my former roles, augmented by my recent foray into web development, will provide a unique standpoint combining technical, design, and product management perspectives critical for a Web Development role.</p>\n<p>With an unwavering enthusiasm for embracing newer technologies, contributing to open-source documentation, and exposing myself to system-level languages such as Rust and Go on the side, I am certain I will bring a proactive, learning mindset to.. Your Company™.</p>\n<p>Given the opportunity, I look forward to leveraging my skills and experiences to support Your Company™ in achieving its operational and strategic goals while fostering my professional growth as a web developer.</p>\n<p>Thank you for considering my application. I look forward to the possibility of discussing this exciting opportunity with you.</p>\n<p>Sincerely,</p>\n<p><strong><em>Callum Kloos</em></strong></p>",
@@ -77,5 +30,52 @@
       "backend"
     ],
     "slug": "unleashing-the-power-of-supabase-with-playq-a-gamechanging-video-game-playlist-manager"
+  },
+  {
+    "title": "Using Notion as a Simple Content Management System",
+    "description": "This Little Piggy required a simple yet flexible content management solution on a small scale. Notion ticked all the boxes.",
+    "projectShortName": "thislittlepiggyrichmond",
+    "content": "<p>When designing the new website for <a href=\"/projects/this-little-piggy-richmond\">This Little Piggy Richmond</a> , a non-profit organisation dedicated to rehoming guinea pigs, the top priority was a simple and efficient system for adding content to the website. The organisation needed a solution that allowed them to move quickly without being bogged down by complex processes or systems prone to errors and frustration. The website is a crucial part of their work, and the ability to update it promptly was key.</p>\n<h2>The Challenge: High Turnover and Cute Content</h2>\n<p>This Little Piggy Richmond experiences a high turnover of guinea pigs due to the need for pairing, partnering, new arrivals, and high levels of pregnancy. As a result, they required a website that could showcase the cuteness factor of these animals while ensuring that the content remained as up-to-date as possible.</p>\n<h2>The Solution: Notion as a Backend</h2>\n<p>Initially, we considered creating an admin panel tool alongside the public website, allowing the organisation to update the database directly. However, we decided against this approach for several reasons:</p>\n<ol>\n<li><strong>Increased Workload</strong>: Building an admin panel would have doubled the amount of work required, and the need for a new website was urgent.</li>\n<li><strong>Lack of Flexibility</strong>: An admin panel might have been too inflexible during the early stages, where iterations and changes were likely to occur.</li>\n</ol>\n<p>After exploring various options, we had the idea of using Notion as the backend, with all data presented on the front-end being pulled directly from Notion.</p>\n<h2>Considerations and Challenges</h2>\n<p><strong>Open Schema</strong>: Notion has a very flexible and lax data model, as expected from a product of its kind. To ensure data integrity, we had to implement strict measures to lock down the databases that touched the front-end, preventing schema changes. Additionally, we needed to handle any potential issues gracefully on the front-end to maintain the application's availability.</p>\n<p><strong>Dynamic vs. Static</strong>: As the ability to quickly change content on the front-end was crucial for the client, rendering pages dynamically on each visit was the preferred approach. However, it was essential to consider the issue of 'live' data being pulled from Notion before it was ready for publication.</p>\n<p><strong>Data Ownership</strong>: One potential risk of this solution was the ownership of the data. Since Notion is not designed as a database, there was a possibility that they could revoke API access or change their terms to disallow this use case. To mitigate this risk, we implemented data backups and ensured a clear path for data portability.</p>\n<h2>Implementation Details</h2>\n<p><strong>Graceful Error Handling and Fallback Data</strong>: To handle cases where the client had incomplete data in the Notion database, we implemented a solution where our components could handle missing data gracefully. This approach provided informative feedback to the client, allowing them to identify and rectify missing data issues without crashing the entire site.</p>\n<p><strong>Data Syncing</strong>: To ensure data integrity and mitigate potential risks, we set up a daily backup process that synchronised data from Notion to a SQLite database. This backup would enable us to migrate to a different solution if necessary.</p>\n<p><strong>Mark as Ready</strong>: To prevent accidental publishing of incomplete or unready data, we implemented a tagging system in Notion. Only data marked as \"website-ready\" would be pulled and displayed on the front-end.</p>\n<p>By leveraging Notion as the backend and implementing these measures, we were able to provide <a href=\"/projects/this-little-piggy-richmond\">This Little Piggy Richmond</a> with a simple and efficient content management system that met their needs for promptly updating their website with the latest adorable guinea pig content.</p>",
+    "coverImageUrl": "https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2021/02/Notion-logo-1.png",
+    "date": "2024-02-14",
+    "author": {
+      "name": "Callum Kloos",
+      "imageUrl": "/avatar.jpeg"
+    },
+    "tags": [
+      "web development",
+      "backend"
+    ],
+    "slug": "using-notion-as-a-simple-content-management-system"
+  },
+  {
+    "title": "Announcement! You can view and download my CV online",
+    "description": "My CV is now available from this website, please do check it out.",
+    "projectShortName": "",
+    "content": "<p>Hey! 👋</p>\n<p>This is just a quick note to let you know that you can find my <a href=\"/cv\">CV online here</a>.</p>\n<p>I am a self taught web developer who is looking for opportunities in a technical role. I have four years experience in Product and UX, and I am proficient in Typescript, React, and a variety of Javascript runtimes. If you like what you see, do let me know and lets connect!</p>",
+    "coverImageUrl": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "date": "2024-03-20",
+    "author": {
+      "name": "Callum Kloos",
+      "imageUrl": "/avatar-scaled.jpg"
+    },
+    "tags": [],
+    "slug": "announcement-you-can-view-and-download-my-cv-online"
+  },
+  {
+    "title": "Introducing playQ: A Cutting-Edge Videogame Playlist Manager",
+    "description": "playQ is a groundbreaking application designed to revolutionize the way gamers organize and share their video game collections. Leveraging the latest technologies, playQ offers an unparalleled experience for managing and exploring video game playlists.",
+    "projectShortName": "playq",
+    "content": "<p>At its core, <a href=\"/projects/playq-videogame-playlist-manager\">playQ</a>  is a sophisticated game management platform that empowers users to create, curate, and share personalized playlists of video games. With an intuitive interface and robust feature set, playQ redefines the way gamers interact with their collections, fostering a more immersive and social gaming experience.</p>\n<p>One of playQ's standout features is its comprehensive rating system, enabling users to assign personal ratings to games within their playlists. This powerful functionality not only allows for in-depth comparisons between titles but also facilitates informed decision-making when selecting the next game to play.</p>\n<p>Additionally, playQ seamlessly integrates social networking capabilities, enabling users to share their meticulously crafted playlists with friends or the broader gaming community. This feature promotes game discovery, fosters meaningful discussions, and cultivates a vibrant community of passionate gamers.\nA Cutting-Edge Tech Stack for an Exceptional User Experience</p>\n<p>playQ is more than just a game playlist manager; it is a testament to the power of modern web development technologies. The application's architecture is built upon a robust stack of industry-leading frameworks and libraries, ensuring optimal performance, scalability, and user experience.</p>\n<p>Supabase: At the core of playQ lies Supabase, an open-source Firebase alternative that provides seamless authentication and database management. Supabase replicates many of Firebase's features, such as real-time subscriptions and auto-generated APIs, while offering the versatility and power of PostgreSQL.</p>\n<p>Remix and React: The user interface (UI), routing, and data loading are powered by the dynamic duo of Remix and React. Remix is a cutting-edge web framework for React that prioritizes user experience, while React facilitates the efficient development of reusable UI components.</p>\n<p>DrizzleORM: playQ's Object-Relational Mapping (ORM) is handled by DrizzleORM, a powerful tool that maps JavaScript objects to database tables, simplifying data operations like inserting, updating, or querying.</p>\n<p>Radix-UI and Shad/cn Inspired Components: To further elevate the user experience, playQ incorporates Radix-UI, a library of low-level, accessible, and unstyled UI components designed for building high-quality web interfaces. The application's UI design is also influenced by the modern and minimalist aesthetic of ShaD/CN styled-components.</p>\n<p>By leveraging this carefully curated tech stack, playQ showcases how sophisticated technologies can be combined to deliver efficient coding practices, superior performance, and an unparalleled user experience.</p>",
+    "coverImageUrl": "/images/projects/playq/1.png",
+    "date": "2024-02-25",
+    "author": {
+      "name": "Callum Kloos",
+      "imageUrl": "/avatar.jpeg"
+    },
+    "tags": [
+      "playQ"
+    ],
+    "slug": "introducing-playq-a-cuttingedge-videogame-playlist-manager"
   }
 ]

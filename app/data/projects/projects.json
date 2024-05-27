@@ -1,55 +1,25 @@
 [
   {
-    "name": "AI Integrated Tabletop Notes",
-    "shortName": "ainotes",
-    "description": "Relational notes, with an exploration into how to integrate structured ai LLM in a meaningful way.",
-    "projectUrl": "https://callum.kloos.com",
-    "githubUrl": "https://github.com/Callumk7/ai-notes",
+    "name": "Spotify Shared Playlists",
+    "shortName": "spotifysharedplaylists",
+    "description": "A weekend project that allows friends to create joint playlists, that can be easily filtered to create playback vibes. Useful for sharing who you are interested in seeing at festivals.",
+    "projectUrl": "https://spotify-playlists-bs5.pages.dev",
+    "githubUrl": "https://github.com/Callumk7/spotify-playlists",
     "coverImageUrl": "http://image.com",
     "tags": [
-      "react",
-      "remix",
-      "ai"
+      "cloudflare",
+      "remix"
     ],
     "caseStudyUrl": "link to article on this project",
-    "content": "<p>A weekend project experimenting with some tech that I hadn't had a chance to touch previously:</p>\n<ol>\n<li>Cloudflare Pages as a deploy target,</li>\n<li>Open source AI models through Cloudflare ai,</li>\n<li>Turso database</li>\n</ol>",
-    "slug": "ai-integrated-tabletop-notes",
+    "content": "<p>A weekend project experimenting with</p>\n<ol>\n<li>using an external oAuth flow for user authentication via cookies</li>\n<li>using cloudflare and d1 for a serverless deployment</li>\n<li>vite as a bundler for remix apps</li>\n<li>caching using cloudflare kv</li>\n</ol>",
+    "slug": "spotify-shared-playlists",
     "tech": [
-      "react",
+      "cloudflare",
       "remix",
-      "typescript"
+      "d1"
     ],
     "wip": true,
-    "cvDescription": "I built an entirely custom portfolio website using React and Remix. I wrote a custom build process which parses markdown content and caches the output into simple JSON for the app to consume on request with response times of less than 7ms."
-  },
-  {
-    "name": "playQ Videogame Playlist Manager",
-    "shortName": "playq",
-    "description": "Create and share playlists to keep track of what you have been playing",
-    "projectUrl": "https://playq.xyz",
-    "githubUrl": "https://github.com/Callumk7/frontline-v2-remix",
-    "coverImageUrl": "http://image.com",
-    "tags": [
-      "react",
-      "remix",
-      "cloudflare",
-      "supabase",
-      "typescript"
-    ],
-    "caseStudyUrl": "/blog/introducing-playq-a-cuttingedge-videogame-playlist-manager",
-    "content": "<h2>Introduction to playQ</h2>\n<p>PlayQ is a game management application that allows users to create and track lists of video games, known as playlists. It provides a comprehensive platform for users to keep track of games they've played, want to play, or are currently playing.</p>\n<p>Moreover, you can rate the games on a personal scale, adding another layer of information to your lists. This functionality also allows for a comparative analysis between different games based on user ratings.</p>\n<p>This app promotes social interaction by allowing users to share their game playlists with friends or publicly. This makes it easier for users to discover new games and understand their friends' gaming preferences. PlayQ aims to facilitate easier decision-making when it comes to choosing the next game to play.</p>\n<h2>playQ - A Learning Project</h2>\n<p>PlayQ is not just a game playlist management app, it's also a comprehensive learning project that incorporates a variety of advanced technologies:</p>\n<p><strong>Supabase</strong> - PlayQ uses Supabase for authentication and database management. Supabase is an open-source Firebase alternative that replicates some of its features like real-time subscriptions and auto-generated APIs, while offering the versatility of PostgreSQL.</p>\n<p><strong>Remix and React</strong> - The user interface (UI), routing, and data loading are built with Remix and React. Remix is a powerful web framework for React that priorities user experience, while React facilitates building reusable UI components efficiently.</p>\n<p><strong>DrizzleORM</strong> - The app's Object-Relational Mapping (ORM) is handled by DrizzleORM. With DrizzleORM, JavaScript objects are mapped to database tables, simplifying data operations like inserting, updating, or querying data.</p>\n<p><strong>Radix-UI and Shad/cn Inspired Components</strong> - To further refine the user interface, the app uses Radix-UI, a library of low-level, accessible and unstyled UI components for building high-quality web interfaces. The UI design is also influenced by ShaD/CN styled-components, favouring a modern and minimalist aesthetic.</p>\n<p>By using these technologies, PlayQ showcases how sophisticated tech stacks can be combined for efficient coding practices and superior user experience.</p>",
-    "slug": "playq-videogame-playlist-manager",
-    "tech": [
-      "react",
-      "postgres",
-      "remix",
-      "supabase",
-      "nodejs",
-      "typescript",
-      "cloudflare"
-    ],
-    "wip": false,
-    "cvDescription": "I built a playlist management solution that supports server side rendering (SSR), user authentication, aggregated scores and ratings, and a user activity feed. The app uses React and Remix as the full stack framework, with some additional asyncronous tasks offloaded to a cloudflare application."
+    "cvDescription": "A weekend project that allows friends to create joint playlists, that can be easily filtered to create playback vibes. Useful for sharing who you are interested in seeing at festivals."
   },
   {
     "name": "My Developer Portfolio",
@@ -71,7 +41,8 @@
       "typescript"
     ],
     "wip": false,
-    "cvDescription": "I built an entirely custom portfolio website using React and Remix. I wrote a custom build process which parses markdown content and caches the output into simple JSON for the app to consume on request with response times of less than 7ms."
+    "cvDescription": "I built an entirely custom portfolio website using React and Remix. I wrote a custom build process which parses markdown content and caches the output into simple JSON for the app to consume on request with response times of less than 7ms.",
+    "screenshotCount": 3
   },
   {
     "name": "ReCollect Social Journalling",
@@ -102,26 +73,34 @@
     "wip": true
   },
   {
-    "name": "Spotify Shared Playlists",
-    "shortName": "spotifysharedplaylists",
-    "description": "A weekend project that allows friends to create joint playlists, that can be easily filtered to create playback vibes. Useful for sharing who you are interested in seeing at festivals.",
-    "projectUrl": "https://spotify-playlists-bs5.pages.dev",
-    "githubUrl": "https://github.com/Callumk7/spotify-playlists",
+    "name": "playQ Videogame Playlist Manager",
+    "shortName": "playq",
+    "description": "Create and share playlists to keep track of what you have been playing",
+    "projectUrl": "https://playq.xyz",
+    "githubUrl": "https://github.com/Callumk7/frontline-v2-remix",
     "coverImageUrl": "http://image.com",
     "tags": [
-      "cloudflare",
-      "remix"
-    ],
-    "caseStudyUrl": "link to article on this project",
-    "content": "<p>A weekend project experimenting with</p>\n<ol>\n<li>using an external oAuth flow for user authentication via cookies</li>\n<li>using cloudflare and d1 for a serverless deployment</li>\n<li>vite as a bundler for remix apps</li>\n<li>caching using cloudflare kv</li>\n</ol>",
-    "slug": "spotify-shared-playlists",
-    "tech": [
-      "cloudflare",
+      "react",
       "remix",
-      "d1"
+      "cloudflare",
+      "supabase",
+      "typescript"
     ],
-    "wip": true,
-    "cvDescription": "A weekend project that allows friends to create joint playlists, that can be easily filtered to create playback vibes. Useful for sharing who you are interested in seeing at festivals."
+    "caseStudyUrl": "/blog/introducing-playq-a-cuttingedge-videogame-playlist-manager",
+    "content": "<h2>Introduction to playQ</h2>\n<p>PlayQ is a game management application that allows users to create and track lists of video games, known as playlists. It provides a comprehensive platform for users to keep track of games they've played, want to play, or are currently playing.</p>\n<p>Moreover, you can rate the games on a personal scale, adding another layer of information to your lists. This functionality also allows for a comparative analysis between different games based on user ratings.</p>\n<p>This app promotes social interaction by allowing users to share their game playlists with friends or publicly. This makes it easier for users to discover new games and understand their friends' gaming preferences. PlayQ aims to facilitate easier decision-making when it comes to choosing the next game to play.</p>\n<h2>playQ - A Learning Project</h2>\n<p>PlayQ is not just a game playlist management app, it's also a comprehensive learning project that incorporates a variety of advanced technologies:</p>\n<p><strong>Supabase</strong> - PlayQ uses Supabase for authentication and database management. Supabase is an open-source Firebase alternative that replicates some of its features like real-time subscriptions and auto-generated APIs, while offering the versatility of PostgreSQL.</p>\n<p><strong>Remix and React</strong> - The user interface (UI), routing, and data loading are built with Remix and React. Remix is a powerful web framework for React that priorities user experience, while React facilitates building reusable UI components efficiently.</p>\n<p><strong>DrizzleORM</strong> - The app's Object-Relational Mapping (ORM) is handled by DrizzleORM. With DrizzleORM, JavaScript objects are mapped to database tables, simplifying data operations like inserting, updating, or querying data.</p>\n<p><strong>Radix-UI and Shad/cn Inspired Components</strong> - To further refine the user interface, the app uses Radix-UI, a library of low-level, accessible and unstyled UI components for building high-quality web interfaces. The UI design is also influenced by ShaD/CN styled-components, favouring a modern and minimalist aesthetic.</p>\n<p>By using these technologies, PlayQ showcases how sophisticated tech stacks can be combined for efficient coding practices and superior user experience.</p>",
+    "slug": "playq-videogame-playlist-manager",
+    "tech": [
+      "react",
+      "postgres",
+      "remix",
+      "supabase",
+      "nodejs",
+      "typescript",
+      "cloudflare"
+    ],
+    "wip": false,
+    "cvDescription": "I built a playlist management solution that supports server side rendering (SSR), user authentication, aggregated scores and ratings, and a user activity feed. The app uses React and Remix as the full stack framework, with some additional asyncronous tasks offloaded to a cloudflare application.",
+    "screenshotCount": 3
   },
   {
     "name": "This Little Piggy Richmond",
@@ -144,6 +123,30 @@
       "notion"
     ],
     "wip": false,
-    "cvDescription": "I built a client-facing website that utilises Notion as a backend to facilitate dynamic content updates without the need for a complex CMS solution. Data on the inventory can be changed by the client and seen instantly without a build step. Built with Next.js and deployed to Vercel."
+    "cvDescription": "I built a client-facing website that utilises Notion as a backend to facilitate dynamic content updates without the need for a complex CMS solution. Data on the inventory can be changed by the client and seen instantly without a build step. Built with Next.js and deployed to Vercel.",
+    "screenshotCount": 3
+  },
+  {
+    "name": "AI Integrated Tabletop Notes",
+    "shortName": "ainotes",
+    "description": "Relational notes, with an exploration into how to integrate structured ai LLM in a meaningful way.",
+    "projectUrl": "https://callum.kloos.com",
+    "githubUrl": "https://github.com/Callumk7/ai-notes",
+    "coverImageUrl": "http://image.com",
+    "tags": [
+      "react",
+      "remix",
+      "ai"
+    ],
+    "caseStudyUrl": "link to article on this project",
+    "content": "<p>A weekend project experimenting with some tech that I hadn't had a chance to touch previously:</p>\n<ol>\n<li>Cloudflare Pages as a deploy target,</li>\n<li>Open source AI models through Cloudflare ai,</li>\n<li>Turso database</li>\n</ol>",
+    "slug": "ai-integrated-tabletop-notes",
+    "tech": [
+      "react",
+      "remix",
+      "typescript"
+    ],
+    "wip": true,
+    "cvDescription": "I built an entirely custom portfolio website using React and Remix. I wrote a custom build process which parses markdown content and caches the output into simple JSON for the app to consume on request with response times of less than 7ms."
   }
 ]
