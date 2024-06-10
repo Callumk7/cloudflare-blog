@@ -27,7 +27,7 @@ export default function AppIndex() {
 			</div>
 			<Separator className="my-8" />
 			<H2>Featured Projects</H2>
-			<div className="grid lg:grid-cols-3 gap-4">
+			<div className="grid gap-4 lg:grid-cols-3">
 				{completedProjects.map((project) => (
 					<ProjectCard key={project.slug} project={project} />
 				))}

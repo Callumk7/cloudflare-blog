@@ -2,11 +2,11 @@ import { Card } from "../layout/card";
 
 export default function Timeline() {
   return (
-    <div className="flex w-full items-center divide-x divide-primary-1">
-      <div className="flex w-full flex-col gap-y-7">
-        <div className="flex w-full items-center">
+    <div className="flex items-center w-full divide-x divide-primary-1">
+      <div className="flex flex-col gap-y-7 w-full">
+        <div className="flex items-center w-full">
           <Card className="ml-20 w-full" flex>
-            <h1 className="font-syne font-black">Product Manager</h1>
+            <h1 className="font-black font-syne">Product Manager</h1>
             <p>
               Velit ipsum ut et id laboris excepteur esse ullamco dolore tempor veniam.
               Velit labore aliquip do nostrud ex irure ad voluptate reprehenderit est
@@ -19,9 +19,9 @@ export default function Timeline() {
           </Card>
           <div className="w-20 border-t border-primary-1" />
         </div>
-        <div className="flex w-full items-center">
+        <div className="flex items-center w-full">
           <Card className="ml-20 w-full">
-            <h1 className="font-syne font-black">Strategy</h1>
+            <h1 className="font-black font-syne">Strategy</h1>
             <p>
               Non consequat velit id do laboris qui minim do. Ipsum ex veniam culpa quis
               aliqua. Velit sint irure qui elit amet. Mollit elit nisi incididunt ea minim
@@ -32,11 +32,11 @@ export default function Timeline() {
           <div className="w-20 border-t border-primary-1" />
         </div>
       </div>
-      <div className="flex w-full flex-col gap-y-7">
+      <div className="flex flex-col gap-y-7 w-full">
         <div className="flex items-center">
           <div className="w-10 border-t border-primary-1" />
           <Card className="mr-20 w-full">
-            <h1 className="font-syne font-black">UX Design</h1>
+            <h1 className="font-black font-syne">UX Design</h1>
             <p>
               Culpa voluptate aliquip magna elit irure consequat est aliquip et. Do do
               elit cillum duis culpa aliquip aliqua commodo aute est. In sint ex est
@@ -47,10 +47,10 @@ export default function Timeline() {
             </p>
           </Card>
         </div>
-        <div className="mt-10 flex items-center">
+        <div className="flex items-center mt-10">
           <div className="w-10 border-t border-primary-1" />
           <Card className="mr-20 w-full">
-            <h1 className="font-syne font-black">Web Development</h1>
+            <h1 className="font-black font-syne">Web Development</h1>
             <p>
               Commodo minim officia nisi in pariatur. Nisi duis ea est esse officia labore
               do consectetur. Dolor cillum aliqua in esse qui nostrud et labore est et ad

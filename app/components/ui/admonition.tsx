@@ -12,7 +12,7 @@ export function Admonition({ children, variant }: AdmonitionProps) {
       height="256"
       viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6"
+      className="w-6 h-6"
     >
       <path
         fill="currentColor"
@@ -26,7 +26,7 @@ export function Admonition({ children, variant }: AdmonitionProps) {
       height="1024"
       viewBox="0 0 1024 1024"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6"
+      className="w-6 h-6"
     >
       <path
         fill="currentColor"
@@ -40,7 +40,7 @@ export function Admonition({ children, variant }: AdmonitionProps) {
       height="24"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6"
+      className="w-6 h-6"
     >
       <path
         fill="currentColor"

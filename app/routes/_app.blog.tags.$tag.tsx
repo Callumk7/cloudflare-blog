@@ -27,11 +27,11 @@ export default function BlogPage() {
   return (
     <>
       <div className="divide-y divide-foreground/20">
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="md:leading-14 font-syne text-3xl font-extrabold leading-9 tracking-tight  text-foreground sm:text-4xl sm:leading-10 md:text-6xl">
+        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
+          <h1 className="text-3xl font-extrabold tracking-tight leading-9 sm:text-4xl sm:leading-10 md:text-6xl font-syne text-foreground md:leading-14">
             {tag}
           </h1>
-          <TagList className="pb-10 pt-3" tags={tags} />
+          <TagList className="pt-3 pb-10" tags={tags} />
         </div>
         {posts.map((post) => (
           <PostPreview key={post.slug} post={post} />

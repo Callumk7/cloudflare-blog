@@ -62,7 +62,7 @@ export function Navbar() {
 	));
 
 	return (
-		<nav className="fixed z-50 flex w-full flex-row items-center justify-between border-b border-foreground/20 bg-background/80 px-10 py-5 backdrop-blur lg:px-48">
+		<nav className="flex fixed z-50 flex-row justify-between items-center py-5 px-10 w-full border-b lg:px-48 border-foreground/20 bg-background/80 backdrop-blur">
 			<Collapsible
 				className="block md:hidden"
 				open={isMenuOpen}
@@ -72,11 +72,11 @@ export function Navbar() {
 					MENU
 				</CollapsibleTrigger>
 				<CollapsibleContent>
-					<div className="mt-4 flex flex-col gap-3">{linksMarkup}</div>
+					<div className="flex flex-col gap-3 mt-4">{linksMarkup}</div>
 				</CollapsibleContent>
 			</Collapsible>
 			<div className="hidden flex-row justify-evenly md:flex">{linksMarkup}</div>
-			<SocialLinks className="mt-2 self-start" />
+			<SocialLinks className="self-start mt-2" />
 		</nav>
 	);
 }

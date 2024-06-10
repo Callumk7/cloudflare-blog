@@ -4,7 +4,7 @@ interface PillProps {
 
 export function Pill({ tag }: PillProps) {
   return (
-    <div className="rounded-full bg-white px-2 py-1 font-mono text-sm text-background">
+    <div className="py-1 px-2 font-mono text-sm bg-white rounded-full text-background">
       {tag}
     </div>
   );

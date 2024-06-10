@@ -10,7 +10,7 @@ export function PhotoPreview({ photo, size }: PhotoPreviewProps) {
   return (
     <Link
       to={`/photography/${photo.id}`}
-      className="group relative block h-full w-full overflow-hidden animate-in fade-in ease-in duration-200 delay-100"
+      className="block overflow-hidden relative w-full h-full duration-200 ease-in delay-100 group animate-in fade-in"
     >
       <img
         src={
@@ -21,9 +21,9 @@ export function PhotoPreview({ photo, size }: PhotoPreviewProps) {
             : photo.urls.raw
         }
         alt={photo.alt_description}
-        className="h-full w-full object-cover object-center"
+        className="object-cover object-center w-full h-full"
       />
-      <div className="absolute bottom-0 left-0 w-full bg-background px-4 py-1 text-foreground opacity-0 transition-opacity duration-200 delay-200 group-hover:opacity-80">
+      <div className="absolute bottom-0 left-0 py-1 px-4 w-full opacity-0 transition-opacity duration-200 delay-200 group-hover:opacity-80 bg-background text-foreground">
         Information about the photo
       </div>
     </Link>

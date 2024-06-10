@@ -5,11 +5,11 @@ interface CoverImageProps {
 
 export function CoverImage({ imageUrl, altText }: CoverImageProps) {
   return (
-    <div className="relative mx-auto aspect-auto overflow-hidden rounded-md border border-white md:w-1/2">
+    <div className="overflow-hidden relative mx-auto rounded-md border border-white md:w-1/2 aspect-auto">
       <img
         src={imageUrl}
         alt={altText}
-        className="h-full w-full object-cover object-center"
+        className="object-cover object-center w-full h-full"
       />
     </div>
   );

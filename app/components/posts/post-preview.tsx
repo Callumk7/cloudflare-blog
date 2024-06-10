@@ -10,11 +10,11 @@ export function PostPreview({ post }: PostPreviewProps) {
 	return (
 		<Link
 			to={`/blog/${post.slug}`}
-			className="hover:bg-background-hover rounded-md group flex flex-col gap-2 p-3"
+			className="flex flex-col gap-2 p-3 rounded-md group hover:bg-background-hover"
 			prefetch="intent"
 		>
-			<p className="text-foreground/60 font-mono text-sm">{date.toDateString()}</p>
-			<h1 className="font-syne text-primary-1 text-lg font-bold group-hover:text-violet-400 transition-colors ease-in-out duration-100">
+			<p className="font-mono text-sm text-foreground/60">{date.toDateString()}</p>
+			<h1 className="text-lg font-bold transition-colors duration-100 ease-in-out group-hover:text-violet-400 font-syne text-primary-1">
 				{post.title}
 			</h1>
 			<p className="font-mono">{post.description}</p>

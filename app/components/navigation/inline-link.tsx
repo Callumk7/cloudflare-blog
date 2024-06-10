@@ -10,7 +10,7 @@ export function InlineLink({ to, children }: InlineLinkProps) {
   return (
     <Link
       to={to}
-      className="mx-1 rounded-2xl bg-slate-200 px-2 py-1 text-sm text-background transition-colors ease-in-out hover:bg-primary-2 hover:text-background"
+      className="py-1 px-2 mx-1 text-sm rounded-2xl transition-colors ease-in-out bg-slate-200 text-background hover:bg-primary-2 hover:text-background"
     >
       {children}
     </Link>

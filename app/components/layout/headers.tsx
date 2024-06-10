@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 export function H1({ children }: { children: ReactNode }) {
   return (
-    <h1 className="pb-3 font-syne text-2xl font-black text-primary-1">{children}</h1>
+    <h1 className="pb-3 text-2xl font-black font-syne text-primary-1">{children}</h1>
   );
 }
 export function H2({ children, primary }: { children: ReactNode; primary?: boolean }) {

@@ -13,9 +13,9 @@ export default function AboutPage() {
         </Link>{" "}
         and reach out!
       </Admonition>
-      <div className="flex flex-col items-center gap-8 pt-24 lg:grid lg:grid-cols-3">
+      <div className="flex flex-col gap-8 items-center pt-24 lg:grid lg:grid-cols-3">
         <Profile />
-        <div className="prose prose-invert col-span-2 max-w-none">
+        <div className="col-span-2 max-w-none prose prose-invert">
           <p>
             Hi, and thanks for stopping by. My name is{" "}
             <span className="font-bold text-primary-2">Callum</span> and I am a

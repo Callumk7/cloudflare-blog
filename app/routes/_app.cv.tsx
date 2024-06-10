@@ -62,7 +62,7 @@ export default function CVRoute() {
 				<SkillsList skills={skills} />
 			</Card>
 			<div className="grid gap-9 lg:grid-cols-3">
-				<div className="col-span-2 flex flex-col gap-4">
+				<div className="flex flex-col col-span-2 gap-4">
 					<H2>Work History</H2>
 					<WorkExperience
 						institution="Freelance Web Developer"
@@ -111,7 +111,7 @@ export default function CVRoute() {
 						product led engagement and retention strategies.
 					</WorkExperience>
 				</div>
-				<div className="col-span-2 w-full space-y-3 lg:col-span-1">
+				<div className="col-span-2 space-y-3 w-full lg:col-span-1">
 					<H2>Projects</H2>
 					{projects.map((project) => (
 						<CVProjectCard project={project} key={project.slug} />
@@ -142,7 +142,7 @@ function DownloadCVButton() {
 			href="/files/callum-kloos-cv-2024.pdf"
 			target="_blank"
 			rel="noreferrer"
-			className="text-bold mr-6 rounded-md bg-foreground p-2 text-background transition-colors duration-100 ease-in-out hover:bg-primary-1 active:bg-primary-2"
+			className="p-2 mr-6 rounded-md transition-colors duration-100 ease-in-out text-bold bg-foreground text-background hover:bg-primary-1 active:bg-primary-2"
 		>
 			Download
 		</a>

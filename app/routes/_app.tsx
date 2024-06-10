@@ -5,7 +5,7 @@ export default function AppLayout() {
   return (
     <main>
       <Navbar />
-      <div className="mx-auto mb-28 min-h-screen w-4/5 pt-28">
+      <div className="pt-28 mx-auto mb-28 w-4/5 min-h-screen">
         <Outlet />
       </div>
       <footer className="py-4 pl-6 font-light text-slate-300">

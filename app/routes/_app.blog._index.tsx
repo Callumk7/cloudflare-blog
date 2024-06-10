@@ -16,9 +16,9 @@ export default function BlogPage() {
   const { posts, tags } = useLoaderData<typeof loader>();
   return (
     <div className="divide-y divide-foreground/20">
-      <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+      <div className="pt-6 pb-8 space-y-2 md:space-y-5">
         <Title title="Latest" />
-        <TagList className="pb-10 pt-3" tags={tags} />
+        <TagList className="pt-3 pb-10" tags={tags} />
       </div>
       {posts.map((post) => (
         <PostPreview key={post.slug} post={post} />

@@ -19,7 +19,7 @@ export default function ProjectsIndex() {
   return (
     <Container width={"mobMax"}>
       <Title title="Projects" />
-      <div className="prose prose-invert max-w-none">
+      <div className="max-w-none prose prose-invert">
         <p>
           Take a look at some of the projects that I have been working on
           recently. Do let me know if you see anything that you like. In

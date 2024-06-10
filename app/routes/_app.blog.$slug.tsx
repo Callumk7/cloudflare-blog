@@ -31,7 +31,7 @@ export default function BlogPostPage() {
   return (
     <>
       <CoverImage imageUrl={post.coverImageUrl} altText={post.title} />
-      <div className="mx-auto mt-5 flex w-fit flex-wrap gap-3">
+      <div className="flex flex-wrap gap-3 mx-auto mt-5 w-fit">
         {post.tags.map((tag) => (
           <Pill key={tag} tag={tag} />
         ))}

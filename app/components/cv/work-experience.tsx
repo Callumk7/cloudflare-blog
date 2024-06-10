@@ -21,7 +21,7 @@ export function WorkExperience({
     <Card>
       <TimeWorked dateFrom={dateFrom} dateTo={dateTo} />
       <H2 primary>{institution}</H2>
-      <h3 className="pb-3 pt-1 text-lg font-semibold">{title}</h3>
+      <h3 className="pt-1 pb-3 text-lg font-semibold">{title}</h3>
       <p className="leading-loose">{children}</p>
     </Card>
   );

@@ -44,18 +44,18 @@ export default function ProjectLayout() {
         </div>
         <div className="space-y-5 xl:hidden">
           <Separator />
-          <h3 className="font-syne text-lg font-bold">Other Projects</h3>
+          <h3 className="text-lg font-bold font-syne">Other Projects</h3>
         </div>
         <div className="relative w-full xl:col-span-3">
           <div className="xl:fixed">
             <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-1 xl:max-w-sm">
-              <div className="mb-7 hidden xl:inline">
+              <div className="hidden mb-7 xl:inline">
                 <ProjectDetailsCard
                   project={project}
                   relatedPosts={relatedPosts}
                 />
               </div>
-              <h3 className="hidden pb-4 pt-10 font-syne text-lg font-bold xl:inline">
+              <h3 className="hidden pt-10 pb-4 text-lg font-bold xl:inline font-syne">
                 Other Projects
               </h3>
               <Card flex>

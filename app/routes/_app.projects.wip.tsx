@@ -18,7 +18,7 @@ export default function WipProjects() {
   return (
     <Container width={"mobMax"}>
       <Title title="Work In Progress" />
-      <div className="prose prose-invert max-w-none">
+      <div className="max-w-none prose prose-invert">
         <p>
           This is the stuff that is not ready for presentation. Ideas, tinkering
           projects, or just need more thought. If you have some ideas, please do

@@ -31,11 +31,11 @@ export default function ProjectsPage() {
 
 	return (
 		<Container width={"max"}>
-			<h1 className="font-syne text-2xl font-black text-primary-1 md:text-4xl">
+			<h1 className="text-2xl font-black md:text-4xl font-syne text-primary-1">
 				{project.name}
 			</h1>
 			{images && images.length > 0 && (
-				<Carousel className="mx-auto my-10 w-full md:w-4/5">
+				<Carousel className="my-10 mx-auto w-full md:w-4/5">
 					<CarouselContent>
 						{images.map((image) => (
 							<CarouselItem key={image}>
@@ -44,10 +44,10 @@ export default function ProjectsPage() {
 										<img
 											aria-label="Application screenshot"
 											src={image}
-											className="h-full w-full object-cover object-center"
+											className="object-cover object-center w-full h-full"
 										/>
 									</div>
-									<figcaption className="mt-3 text-center font-mono">{image}</figcaption>
+									<figcaption className="mt-3 font-mono text-center">{image}</figcaption>
 								</figure>
 							</CarouselItem>
 						))}
