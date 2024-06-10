@@ -8,12 +8,21 @@ githubUrl: "https://github.com/Callumk7/frontline-v2-remix"
 tags: ["react", "remix", "cloudflare", "supabase", "typescript"]
 caseStudyUrl: "/blog/introducing-playq-a-cuttingedge-videogame-playlist-manager"
 related:
-    [
-        "/blog/introducing-playq-a-cuttingedge-videogame-playlist-manager",
-        "/blog/something-about-playq",
-        "/blog/another-update-of-interest",
-    ]
-tech: ["react", "postgres", "remix", "supabase", "nodejs", "typescript", "cloudflare"]
+  [
+    "/blog/introducing-playq-a-cuttingedge-videogame-playlist-manager",
+    "/blog/something-about-playq",
+    "/blog/another-update-of-interest",
+  ]
+tech:
+  [
+    "react",
+    "postgres",
+    "remix",
+    "supabase",
+    "nodejs",
+    "typescript",
+    "cloudflare",
+  ]
 wip: false
 cvDescription: "I built a playlist management solution that supports server side rendering (SSR), user authentication, aggregated scores and ratings, and a user activity feed. The app uses React and Remix as the full stack framework, with some additional asyncronous tasks offloaded to a cloudflare application."
 screenshotCount: 3
