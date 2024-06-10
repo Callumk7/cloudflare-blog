@@ -9,7 +9,10 @@
 			"recommended": true,
 			"style": {
 				"noNonNullAssertion": "warn",
-                "useImportType": "off"
+				"useImportType": "off"
+			},
+			"complexity": {
+				"noForEach": "off"
 			}
 		}
 	},

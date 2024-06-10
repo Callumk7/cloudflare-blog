@@ -1,5 +1,5 @@
-import path from "path";
-import fs, { PathLike } from "fs";
+import path from "node:path";
+import fs, { PathLike } from "node:fs";
 import matter from "gray-matter";
 import { markdownToHtml } from "./markdown-to-html";
 import { Post, Project, Tags } from "@/types";
@@ -49,15 +49,8 @@ const getPostDataFromFile = async (filePath: PathLike): Promise<Post> => {
 	// perform the content transformation here, to improve request time
 	const htmlContent = await markdownToHtml(content);
 
-	const {
-		title,
-		description,
-		projectShortName,
-		coverImageUrl,
-		date,
-		author,
-		tags,
-	} = data;
+	const { title, description, projectShortName, coverImageUrl, date, author, tags } =
+		data;
 	if (!title || !description || !coverImageUrl || !date || !author || !tags) {
 		throw new Error("A required field is missing");
 	}
@@ -184,9 +177,7 @@ const buildJson = async (postFolder: string, projectsFolder: string) => {
 	for (const fileName of projectFileNames) {
 		console.log(`Getting data from ${fileName}`);
 		projectPromises.push(
-			getProjectDataFromFile(
-				path.join(process.cwd(), projectsFolder, fileName),
-			),
+			getProjectDataFromFile(path.join(process.cwd(), projectsFolder, fileName)),
 		);
 	}
 
@@ -198,10 +189,7 @@ const buildJson = async (postFolder: string, projectsFolder: string) => {
 		project.tags.forEach((tag) => projectTags.push(tag));
 	}
 
-	const projectTagData = writeTagsToFile(
-		projectTags,
-		"app/data/projects/tags.json",
-	);
+	const projectTagData = writeTagsToFile(projectTags, "app/data/projects/tags.json");
 	writeToFile(projectsData, "app/data/projects/projects.json");
 	return { postData, postTagData, projectsData, projectTagData };
 };
@@ -211,8 +199,10 @@ async function main() {
 		apiToken: API_KEY,
 	});
 
-	const { postData, postTagData, projectsData, projectTagData } =
-		await buildJson("posts", "projects");
+	const { postData, postTagData, projectsData, projectTagData } = await buildJson(
+		"posts",
+		"projects",
+	);
 	const params: Cloudflare.KV.Namespaces.BulkUpdateParams = {
 		account_id: ACCOUNT_ID,
 		body: [
