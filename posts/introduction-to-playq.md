@@ -2,7 +2,7 @@
 title: "Introducing playQ: A Cutting-Edge Videogame Playlist Manager"
 description: "playQ is a groundbreaking application designed to revolutionize the way gamers organize and share their video game collections. Leveraging the latest technologies, playQ offers an unparalleled experience for managing and exploring video game playlists."
 projectShortName: "playq"
-coverImageUrl: "/images/projects/playq/1.png"
+coverImageUrl: "https://ck-portfolio-images.s3.eu-west-2.amazonaws.com/images/projects/playq/1.png"
 date: "2024-02-25"
 tags: ["playQ"]
 author:
