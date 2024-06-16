@@ -8,3 +8,5 @@ node_modules
 .wrangler
 const.ts
 /files
+
+.DS_Store

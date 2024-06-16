@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "c06e4b28992aa21c",
+    "type": "split",
+    "children": [
+      {
+        "id": "280a479b862d7a8d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a177817679a666fc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "34933c75410b4e98",
+    "type": "split",
+    "children": [
+      {
+        "id": "27343c926e098f3f",
+        "type": "tabs",
+        "dimension": 30.583873957367935,
+        "children": [
+          {
+            "id": "7d245448db5f7c95",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "947fa88aed1e3e92",
+        "type": "tabs",
+        "dimension": 69.41612604263206,
+        "children": [
+          {
+            "id": "cec1ade13a4bed0c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime"
+              }
+            }
+          },
+          {
+            "id": "958b727c35340e0a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#blog",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4ea4d6d7de0d3337",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "3b9f861620582e09",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 284.5
+  },
+  "right": {
+    "id": "3f4588c22704d497",
+    "type": "split",
+    "children": [
+      {
+        "id": "6c93c7a19dc91e63",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fd29eb7a5f783b7e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "eb1368574b699205",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f38187bb985519d8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "obsidian-kanban:Create new board": false
+    }
+  },
+  "active": "a177817679a666fc",
+  "lastOpenFiles": [
+    "Welcome.md",
+    "projects",
+    "posts",
+    "Untitled.md",
+    "2024-06-16.md",
+    "Projects Home Page.md",
+    "Projects/playQ/playQ - External Store Integrations.md",
+    "Projects/Game Master/Building an Image Upload Workflow with S3.md",
+    "Blog/Notes on Building a Notes App with Remix.md",
+    "Blog/Refactoring for Composability.md",
+    "Blog/Using Notion as a Backend.md",
+    "Blog/Retrospective Notes on Building this Portfolio Site.md",
+    "2024-06-15.md",
+    "Ideas/Ideas.md",
+    "Projects/Wine Tours/Vineyard Descriptions.md",
+    "2024-06-14.md",
+    "2024-06-13.md",
+    "2024-06-12.md",
+    "2024-06-11.md",
+    "2024-06-10.md",
+    "State Management and Remix.md",
+    "Object Storage.md",
+    "Projects/Game Master/Ai notes Scope.md",
+    "Projects/Game Master/Session Planning.md",
+    "Projects/Game Master/Project Scope.md",
+    "notes/Reach for unit tests earlier to drive correctness.md",
+    "Blog/Building a simple but effective Unsplash Integration.md",
+    "Blog/Check out my CV.md",
+    "Home.canvas",
+    "_archive",
+    "Learning",
+    "Projects/Wine Tours",
+    "AI Notes/Untitled.canvas",
+    "Projects/Game Master/Ai dnd helper.canvas",
+    "attachments/Untitled(1).svg",
+    "Job Hunting/Technical Skills.canvas",
+    "Projects",
+    "Projects/Game Master",
+    "attachments/Basic stack.svg",
+    "notes",
+    "attachments/Basic sidebar.svg",
+    "Ideas",
+    "Blog",
+    "attachments/Database design.svg",
+    "attachments/Profile page.svg",
+    "Excalidraw/Drawing 2024-03-01 17.15.40.excalidraw.svg",
+    "attachments/Old filter menu.png"
+  ]
+}
