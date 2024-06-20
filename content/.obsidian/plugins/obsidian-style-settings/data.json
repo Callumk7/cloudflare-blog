@@ -13,6 +13,5 @@
   "minimal-style@@h1-weight": 700,
   "minimal-style@@h1-size": "1.18em",
   "minimal-style@@list-spacing": 0.175,
-  "minimal-style@@list-indent": 2.2,
-  "minimal-style@@bold-color@@dark": "#BB9AF7"
+  "minimal-style@@list-indent": 2.2
 }

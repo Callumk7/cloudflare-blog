@@ -200,8 +200,8 @@ async function main() {
 	});
 
 	const { postData, postTagData, projectsData, projectTagData } = await buildJson(
-		"posts",
-		"projects",
+		"content/posts",
+		"content/projects",
 	);
 	const params: Cloudflare.KV.Namespaces.BulkUpdateParams = {
 		account_id: ACCOUNT_ID,

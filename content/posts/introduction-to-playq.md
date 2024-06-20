@@ -10,7 +10,7 @@ author:
     imageUrl: "/avatar.jpeg"
 ---
 
-At its core, [playQ](/projects/playq-videogame-playlist-manager)  is a sophisticated game management platform that empowers users to create, curate, and share personalized playlists of video games. With an intuitive interface and robust feature set, playQ redefines the way gamers interact with their collections, fostering a more immersive and social gaming experience.
+At its core, [playQ](/projects/playq-videogame-playlist-manager)  is a sophisticated game management platform that empowers users to create, curate, and share personalised playlists of video games. With an intuitive interface and robust feature set, playQ redefines the way gamers interact with their collections, fostering a more immersive and social gaming experience.
 
 One of playQ's standout features is its comprehensive rating system, enabling users to assign personal ratings to games within their playlists. This powerful functionality not only allows for in-depth comparisons between titles but also facilitates informed decision-making when selecting the next game to play.
 
@@ -21,7 +21,7 @@ playQ is more than just a game playlist manager; it is a testament to the power 
 
 Supabase: At the core of playQ lies Supabase, an open-source Firebase alternative that provides seamless authentication and database management. Supabase replicates many of Firebase's features, such as real-time subscriptions and auto-generated APIs, while offering the versatility and power of PostgreSQL.
 
-Remix and React: The user interface (UI), routing, and data loading are powered by the dynamic duo of Remix and React. Remix is a cutting-edge web framework for React that prioritizes user experience, while React facilitates the efficient development of reusable UI components.
+Remix and React: The user interface (UI), routing, and data loading are powered by the dynamic duo of Remix and React. Remix is a cutting-edge web framework for React that priorities user experience, while React facilitates the efficient development of reusable UI components.
 
 DrizzleORM: playQ's Object-Relational Mapping (ORM) is handled by DrizzleORM, a powerful tool that maps JavaScript objects to database tables, simplifying data operations like inserting, updating, or querying.
 

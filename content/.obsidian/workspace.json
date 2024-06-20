@@ -11,11 +11,28 @@
             "id": "a177817679a666fc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "posts/open-letter-to-recruiters.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "b7664ef4cc863a7a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wip/working-with-different-data-fetching-patterns-in-react.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -27,7 +44,7 @@
       {
         "id": "27343c926e098f3f",
         "type": "tabs",
-        "dimension": 30.583873957367935,
+        "dimension": 30.58387395736794,
         "children": [
           {
             "id": "7d245448db5f7c95",
@@ -108,6 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "wip/working-with-different-data-fetching-patterns-in-react.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,6 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "wip/working-with-different-data-fetching-patterns-in-react.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +153,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "wip/working-with-different-data-fetching-patterns-in-react.md"
+              }
             }
           }
         ]
@@ -159,36 +180,38 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "a177817679a666fc",
+  "active": "b7664ef4cc863a7a",
   "lastOpenFiles": [
+    "wip",
+    "templates/post-template.md",
+    "wip/working-with-different-data-fetching-patterns-in-react.md",
+    "Hello.md",
+    "posts/cv-announcement.md",
+    "posts/open-letter-to-recruiters.md",
+    "posts/notion-as-a-backend.md",
+    "projects/spotify-shared-playlists.md",
+    "projects/this-little-piggy.md",
+    "projects/recollect.md",
+    "~~.md",
+    "Untitled 2.md",
+    "Untitled 1.md",
+    "posts/introduction-to-playq.md",
+    "templates/cv-announcement.md",
+    "templates/Post Template.md",
+    "templates",
+    "posts/Untitled.md",
+    "projects/game-master.md~",
+    "projects/game-master.md",
+    "projects/playq.md",
+    "projects/portfolio.md",
+    "projects/ai-notes.md",
     "Welcome.md",
     "projects",
     "posts",
-    "Untitled.md",
     "2024-06-16.md",
     "Projects Home Page.md",
     "Projects/playQ/playQ - External Store Integrations.md",
     "Projects/Game Master/Building an Image Upload Workflow with S3.md",
-    "Blog/Notes on Building a Notes App with Remix.md",
-    "Blog/Refactoring for Composability.md",
-    "Blog/Using Notion as a Backend.md",
-    "Blog/Retrospective Notes on Building this Portfolio Site.md",
-    "2024-06-15.md",
-    "Ideas/Ideas.md",
-    "Projects/Wine Tours/Vineyard Descriptions.md",
-    "2024-06-14.md",
-    "2024-06-13.md",
-    "2024-06-12.md",
-    "2024-06-11.md",
-    "2024-06-10.md",
-    "State Management and Remix.md",
-    "Object Storage.md",
-    "Projects/Game Master/Ai notes Scope.md",
-    "Projects/Game Master/Session Planning.md",
-    "Projects/Game Master/Project Scope.md",
-    "notes/Reach for unit tests earlier to drive correctness.md",
-    "Blog/Building a simple but effective Unsplash Integration.md",
-    "Blog/Check out my CV.md",
     "Home.canvas",
     "_archive",
     "Learning",
@@ -202,8 +225,6 @@
     "attachments/Basic stack.svg",
     "notes",
     "attachments/Basic sidebar.svg",
-    "Ideas",
-    "Blog",
     "attachments/Database design.svg",
     "attachments/Profile page.svg",
     "Excalidraw/Drawing 2024-03-01 17.15.40.excalidraw.svg",
