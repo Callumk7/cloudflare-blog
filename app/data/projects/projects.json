@@ -25,8 +25,8 @@
   {
     "name": "Game Master Tabletop RPG Note Taking",
     "shortName": "gamemaster",
-    "description": "Write notes in markdownn and connect related entities to always find the note that you need.",
-    "projectUrl": "https://playq.xyz",
+    "description": "Write notes in markdown and connect related entities to always find the note that you need.",
+    "projectUrl": "https://game-master-remix-client.pages.dev",
     "githubUrl": "https://github.com/Callumk7/game-master",
     "coverImageUrl": "http://image.com",
     "tags": [
