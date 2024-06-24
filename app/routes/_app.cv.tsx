@@ -28,12 +28,11 @@ const skills = [
 	"react",
 	"remix",
 	"tailwind",
-	"SQl (Postgres)",
+	"SQl",
 	"nodejs",
 	"nextjs",
 	"product management",
 	"ux research and design",
-	"data analysis",
 ];
 
 export default function CVRoute() {
@@ -123,13 +122,13 @@ export default function CVRoute() {
 						title="MEng Mechanical Engineering (Merit)"
 						dateFrom={new Date("2009-09-01")}
 						dateTo={new Date("2015-09-01")}
-					></WorkExperience>
+					/>
 					<WorkExperience
 						institution="CareerFoundry"
 						title="UX Immersion"
 						dateFrom={new Date("2020-10-01")}
 						dateTo={new Date("2021-09-01")}
-					></WorkExperience>
+					/>
 				</div>
 			</div>
 		</Container>
@@ -142,7 +141,7 @@ function DownloadCVButton() {
 			href="/files/callum-kloos-cv-2024.pdf"
 			target="_blank"
 			rel="noreferrer"
-			className="p-2 mr-6 rounded-md transition-colors duration-100 ease-in-out text-bold bg-foreground text-background hover:bg-primary-1 active:bg-primary-2"
+			className="p-2 mr-6 rounded-md transition-colors duration-100 ease-in-out text-bold bg-primary-3 text-background hover:bg-primary-1 active:bg-primary-2"
 		>
 			Download
 		</a>
