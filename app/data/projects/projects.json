@@ -1,28 +1,5 @@
 [
   {
-    "name": "AI Integrated Tabletop Notes",
-    "shortName": "ainotes",
-    "description": "Relational notes, with an exploration into how to integrate structured ai LLM in a meaningful way.",
-    "projectUrl": "https://callum.kloos.com",
-    "githubUrl": "https://github.com/Callumk7/ai-notes",
-    "coverImageUrl": "http://image.com",
-    "tags": [
-      "react",
-      "remix",
-      "ai"
-    ],
-    "caseStudyUrl": "link to article on this project",
-    "content": "<p>A weekend project experimenting with some tech that I hadn't had a chance to touch previously:</p>\n<ol>\n<li>Cloudflare Pages as a deploy target,</li>\n<li>Open source AI models through Cloudflare ai,</li>\n<li>Turso database</li>\n</ol>",
-    "slug": "ai-integrated-tabletop-notes",
-    "tech": [
-      "react",
-      "remix",
-      "typescript"
-    ],
-    "wip": true,
-    "cvDescription": "I built an entirely custom portfolio website using React and Remix. I wrote a custom build process which parses markdown content and caches the output into simple JSON for the app to consume on request with response times of less than 7ms."
-  },
-  {
     "name": "Game Master Tabletop RPG Note Taking",
     "shortName": "gamemaster",
     "description": "Write notes in markdown and connect related entities to always find the note that you need.",
@@ -38,7 +15,7 @@
       "react-aria-components"
     ],
     "caseStudyUrl": "/blog/introducing-playq-a-cuttingedge-videogame-playlist-manager",
-    "content": "<h2>Game Master</h2>\n<p>I wanted to create a simple app for organising notes using the method that I had already done in Obsidian. In the end this project got a little messy, and is currently in the prototyping phase. I have utilised a few different technologies to get to the place where it is at today:</p>\n<h2>Tech</h2>\n<ol>\n<li>Remix</li>\n<li>Cloudflare Pages</li>\n<li>Hono for the backend</li>\n<li>Monorepo managed with Turborepo</li>\n<li>React Aria Components</li>\n<li>Cloudflare Ai to experiment with generative LLM features</li>\n</ol>",
+    "content": "<h2>Game Master</h2>\n<p>I wanted to create a simple app for organising notes using the method that I had already done in Obsidian. In the end this project got a little messy, and is currently in the prototyping phase. I have utilised a few different technologies to get to the place where it is at today:</p>\n<h2>Tech</h2>\n<ol>\n<li>Remix</li>\n<li>Cloudflare Pages</li>\n<li>Hono for the backend</li>\n<li>Monorepo managed with Turborepo</li>\n<li>React Aria Components</li>\n<li>Cloudflare Ai to experiment with generative LLM features</li>\n</ol>\n<h2>Process</h2>\n<ul>\n<li>Prototype.. in figma?</li>\n<li>Prototype in code\n<ul>\n<li>Built the functionality</li>\n<li>had to then consider how to actually design the Routes</li>\n<li>Moved to an actual backend\n<ul>\n<li>...With better design</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>Started refactoring</li>\n<li></li>\n</ul>\n<h2>Design</h2>\n<ul>\n<li>Technology decisions\n<ul>\n<li>Data fetching pattern</li>\n<li>Data updating pattern</li>\n<li></li>\n</ul>\n</li>\n</ul>\n<h2>Outcome</h2>\n<ul>\n<li></li>\n</ul>",
     "slug": "game-master-tabletop-rpg-note-taking",
     "tech": [
       "react",
@@ -48,9 +25,9 @@
       "typescript",
       "cloudflare"
     ],
-    "wip": true,
+    "wip": false,
     "cvDescription": "In order to learn the accessible component library from adobe, I created this project to combine various principles such as optimistic updates, serverless environments and monorepos.",
-    "screenshotCount": 0
+    "screenshotCount": 3
   },
   {
     "name": "playQ Videogame Playlist Manager",

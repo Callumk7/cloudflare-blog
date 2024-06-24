@@ -1,7 +1,6 @@
 {
-  "react": 6,
-  "remix": 6,
-  "ai": 1,
+  "react": 5,
+  "remix": 5,
   "cloudflare": 4,
   "turso": 1,
   "typescript": 3,
