@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wip/working-with-different-data-fetching-patterns-in-react.md",
+                "file": "projects/game-master.md",
                 "mode": "source",
                 "source": false
               }
@@ -42,24 +42,8 @@
     "type": "split",
     "children": [
       {
-        "id": "27343c926e098f3f",
-        "type": "tabs",
-        "dimension": 30.58387395736794,
-        "children": [
-          {
-            "id": "7d245448db5f7c95",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
         "id": "947fa88aed1e3e92",
         "type": "tabs",
-        "dimension": 69.41612604263206,
         "children": [
           {
             "id": "cec1ade13a4bed0c",
@@ -125,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wip/working-with-different-data-fetching-patterns-in-react.md",
+                "file": "projects/game-master.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wip/working-with-different-data-fetching-patterns-in-react.md",
+                "file": "projects/game-master.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wip/working-with-different-data-fetching-patterns-in-react.md"
+                "file": "projects/game-master.md"
               }
             }
           }
@@ -182,9 +166,12 @@
   },
   "active": "b7664ef4cc863a7a",
   "lastOpenFiles": [
+    "wip/ai-notes.md",
+    "wip/working-with-images.md",
+    "wip/working-with-different-data-fetching-patterns-in-react.md",
+    "projects/game-master.md",
     "wip",
     "templates/post-template.md",
-    "wip/working-with-different-data-fetching-patterns-in-react.md",
     "Hello.md",
     "posts/cv-announcement.md",
     "posts/open-letter-to-recruiters.md",
@@ -201,10 +188,8 @@
     "templates",
     "posts/Untitled.md",
     "projects/game-master.md~",
-    "projects/game-master.md",
     "projects/playq.md",
     "projects/portfolio.md",
-    "projects/ai-notes.md",
     "Welcome.md",
     "projects",
     "posts",
@@ -223,7 +208,6 @@
     "Projects",
     "Projects/Game Master",
     "attachments/Basic stack.svg",
-    "notes",
     "attachments/Basic sidebar.svg",
     "attachments/Database design.svg",
     "attachments/Profile page.svg",
