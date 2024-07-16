@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/game-master.md",
+                "file": "posts/experimenting-with-vue.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/game-master.md",
+                "file": "posts/experimenting-with-vue.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/game-master.md",
+                "file": "posts/experimenting-with-vue.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/game-master.md"
+                "file": "posts/experimenting-with-vue.md"
               }
             }
           }
@@ -166,10 +166,12 @@
   },
   "active": "b7664ef4cc863a7a",
   "lastOpenFiles": [
+    "Pasted image 20240716144010.png",
+    "projects/game-master.md",
+    "posts/experimenting-with-vue.md",
     "wip/ai-notes.md",
     "wip/working-with-images.md",
     "wip/working-with-different-data-fetching-patterns-in-react.md",
-    "projects/game-master.md",
     "wip",
     "templates/post-template.md",
     "Hello.md",
@@ -186,7 +188,6 @@
     "templates/cv-announcement.md",
     "templates/Post Template.md",
     "templates",
-    "posts/Untitled.md",
     "projects/game-master.md~",
     "projects/playq.md",
     "projects/portfolio.md",
@@ -196,7 +197,6 @@
     "2024-06-16.md",
     "Projects Home Page.md",
     "Projects/playQ/playQ - External Store Integrations.md",
-    "Projects/Game Master/Building an Image Upload Workflow with S3.md",
     "Home.canvas",
     "_archive",
     "Learning",
