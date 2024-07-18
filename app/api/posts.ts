@@ -1,16 +1,11 @@
 import { Post, Tags } from "@/types";
 import { AppLoadContext } from "@remix-run/cloudflare";
+import { createPostDataAccess } from "./data-access";
 
-export const getAllPostData = async (
-	context: AppLoadContext,
-): Promise<Post[]> => {
-	const jsonData = await context.cloudflare.env.POSTS.get("postData");
+export const getAllPostData = async (context: AppLoadContext): Promise<Post[]> => {
+	const dataAccess = createPostDataAccess(context);
+	const posts = await dataAccess.getAllPosts();
 
-	if (!jsonData) {
-		return [];
-	}
-
-	const posts: Post[] = JSON.parse(jsonData);
 	posts.sort((a, b) => {
 		const dateA = new Date(a.date);
 		const dateB = new Date(b.date);
