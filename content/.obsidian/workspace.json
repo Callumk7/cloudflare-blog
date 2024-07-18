@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/open-letter-to-recruiters.md",
+                "file": "archive/open-letter-to-recruiters.md",
                 "mode": "source",
                 "source": true
               }
@@ -164,8 +164,9 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "b7664ef4cc863a7a",
+  "active": "cec1ade13a4bed0c",
   "lastOpenFiles": [
+    "archive",
     "posts/experimenting-with-vue.md",
     "Pasted image 20240716144010.png",
     "projects/game-master.md",
@@ -175,8 +176,8 @@
     "wip",
     "templates/post-template.md",
     "Hello.md",
-    "posts/cv-announcement.md",
-    "posts/open-letter-to-recruiters.md",
+    "archive/cv-announcement.md",
+    "archive/open-letter-to-recruiters.md",
     "posts/notion-as-a-backend.md",
     "projects/spotify-shared-playlists.md",
     "projects/this-little-piggy.md",

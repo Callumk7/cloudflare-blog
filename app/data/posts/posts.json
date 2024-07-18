@@ -1,19 +1,5 @@
 [
   {
-    "title": "Announcement! You can view and download my CV online",
-    "description": "My CV is now available from this website, please do check it out.",
-    "projectShortName": "",
-    "content": "<p>Hey! 👋</p>\n<p>This is just a quick note to let you know that you can find my <a href=\"/cv\">CV online here</a>.</p>\n<p>I am a self taught web developer who is looking for opportunities in a technical role. I have four years experience in Product and UX, and I am proficient in Typescript, React, and a variety of Javascript runtimes. If you like what you see, do let me know and lets connect!</p>",
-    "coverImageUrl": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "date": "2024-03-20",
-    "author": {
-      "name": "Callum Kloos",
-      "imageUrl": "/avatar-scaled.jpg"
-    },
-    "tags": [],
-    "slug": "announcement-you-can-view-and-download-my-cv-online"
-  },
-  {
     "title": "Experimenting With Vue",
     "description": "First impressions of javascript's second most popular UI library.",
     "projectShortName": null,
@@ -62,20 +48,5 @@
       "backend"
     ],
     "slug": "using-notion-as-a-simple-content-management-system"
-  },
-  {
-    "title": "An Open Letter to Potential Recruiters",
-    "description": "Thank you for stopping by! If you have not read my bespoke cover letter yet, then please enjoy this open letter instead",
-    "content": "<p>Dear Potential Employer</p>\n<p>Thank you for showing interest in my application, and welcome to my portfolio. With my multifaceted background in <em>product management</em>, <em>user experience design</em>, mechanical engineering, and <em>web development</em>, complemented by my passion for learning and continuous growth, I am confident in my ability to contribute positively to your team.</p>\n<p>During the last year and a half, I've dedicated my time to learning web development and have developed a proficiency in JavaScript, TypeScript, React, the Remix Framework, Next.js to a lesser extent, and currently experimenting with Hono Framework for lightweight data APIs. The culmination of my effort is evident in two apps I conceptualised and developed. The first app - PlayQ is a full-stack web application for sharing video game playlists with enhanced interactivity, the other being a dynamic content module for a local charity.</p>\n<p>My previous role as a Product Manager and UX Designer has given me invaluable experience working in agile environments, understanding the technical nuances from a development perspective, and leading cross-functional teams to deliver projects efficiently. My innate empathy aids in building productive relationships fostering a cooperative work culture.</p>\n<p>I strongly believe that the skills I garnered from my former roles, augmented by my recent foray into web development, will provide a unique standpoint combining technical, design, and product management perspectives critical for a Web Development role.</p>\n<p>With an unwavering enthusiasm for embracing newer technologies, contributing to open-source documentation, and exposing myself to system-level languages such as Rust and Go on the side, I am certain I will bring a proactive, learning mindset to.. Your Company™.</p>\n<p>Given the opportunity, I look forward to leveraging my skills and experiences to support Your Company™ in achieving its operational and strategic goals while fostering my professional growth as a web developer.</p>\n<p>Thank you for considering my application. I look forward to the possibility of discussing this exciting opportunity with you.</p>\n<p>Sincerely,</p>\n<p><strong><em>Callum Kloos</em></strong></p>",
-    "coverImageUrl": "https://images.unsplash.com/photo-1483389127117-b6a2102724ae?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "date": "2024-03-07",
-    "author": {
-      "name": "Callum Kloos",
-      "imageUrl": "/avatar.jpeg"
-    },
-    "tags": [
-      "web development"
-    ],
-    "slug": "an-open-letter-to-potential-recruiters"
   }
 ]
