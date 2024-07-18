@@ -10,6 +10,7 @@ import { getPostBySlug } from "@/api/posts";
 
 export const loader = async ({ context, params }: LoaderFunctionArgs) => {
   const slug = params.slug;
+  // biome-ignore lint/style/noNonNullAssertion: User is redirected if slug is missing.
   const post = await getPostBySlug(context, slug!);
 
   if (!post) {
