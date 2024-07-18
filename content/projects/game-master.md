@@ -12,18 +12,14 @@ tags:
   - turso
   - typescript
   - react-aria-components
-caseStudyUrl: /blog/introducing-playq-a-cuttingedge-videogame-playlist-manager
-related:
-  - /blog/introducing-playq-a-cuttingedge-videogame-playlist-manager
-  - /blog/something-about-playq
-  - /blog/another-update-of-interest
+caseStudyUrl: 
+related: 
 tech:
   - react
   - turso
   - remix
   - cloudflare
   - typescript
-  - cloudflare
 wip: false
 cvDescription: In order to learn the accessible component library from adobe, I created this project to combine various principles such as optimistic updates, serverless environments and monorepos.
 screenshotCount: 5
@@ -31,7 +27,6 @@ screenshotCount: 5
 ## Game Master
 
 I wanted to create a simple app for organising notes using the method that I had already done in Obsidian. In the end this project got a little messy, and is currently in the prototyping phase. I have utilised a few different technologies to get to the place where it is at today:
-
 ## Tech
 
 1. Remix
@@ -39,23 +34,3 @@ I wanted to create a simple app for organising notes using the method that I had
 3. Hono for the backend
 4. Monorepo managed with Turborepo
 5. React Aria Components
-6. Cloudflare Ai to experiment with generative LLM features
-
-## Process
-- Prototype.. in figma?
-- Prototype in code
-	- Built the functionality
-	- had to then consider how to actually design the Routes
-	- Moved to an actual backend
-		- ...With better design
-- Started refactoring
-- 
-
-## Design
-- Technology decisions
-	- Data fetching pattern
-	- Data updating pattern
-	- 
-
-## Outcome
-- 

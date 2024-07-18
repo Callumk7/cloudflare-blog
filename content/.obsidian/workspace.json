@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/playq.md",
+                "file": "projects/this-little-piggy.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/playq.md",
+                "file": "projects/this-little-piggy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/playq.md",
+                "file": "projects/this-little-piggy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/playq.md"
+                "file": "projects/this-little-piggy.md"
               }
             }
           }
@@ -164,12 +164,13 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "cec1ade13a4bed0c",
+  "active": "b7664ef4cc863a7a",
   "lastOpenFiles": [
+    "projects/game-master.md",
+    "projects/playq.md",
     "archive",
     "posts/experimenting-with-vue.md",
     "Pasted image 20240716144010.png",
-    "projects/game-master.md",
     "wip/ai-notes.md",
     "wip/working-with-images.md",
     "wip/working-with-different-data-fetching-patterns-in-react.md",
@@ -190,7 +191,6 @@
     "templates/Post Template.md",
     "templates",
     "projects/game-master.md~",
-    "projects/playq.md",
     "projects/portfolio.md",
     "Welcome.md",
     "projects",
@@ -207,7 +207,6 @@
     "attachments/Untitled(1).svg",
     "Job Hunting/Technical Skills.canvas",
     "Projects",
-    "Projects/Game Master",
     "attachments/Basic stack.svg",
     "attachments/Basic sidebar.svg",
     "attachments/Database design.svg",

@@ -87,9 +87,11 @@ function ProjectDetailsCard({
 			<a href={project.projectUrl} className="link">
 				{project.projectUrl}
 			</a>
-			<Link className="link" to={project.caseStudyUrl}>
-				Introduction Post
-			</Link>
+			{project.caseStudyUrl && (
+				<Link className="link" to={project.caseStudyUrl}>
+					Introduction Post
+				</Link>
+			)}
 			<p>{project.description}</p>
 			<div className="flex flex-wrap gap-3">
 				{project.tech.map((t) => (

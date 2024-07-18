@@ -23,7 +23,7 @@ interface Project {
 	githubUrl: string; // github project link
 	coverImageUrl: string;
 	tags: string[];
-	caseStudyUrl: string;
+	caseStudyUrl?: string;
 	slug: string;
 	content: string;
 	tech: string[];

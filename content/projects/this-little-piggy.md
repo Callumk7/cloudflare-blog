@@ -20,11 +20,11 @@ screenshotCount: 3
 
 **Need**
 
-The organization approached us, seeking a website with excellent SEO performance and discoverability within their specific sector. An essential requirement was the provision of an online platform where potential adopters could view recently rescued guinea pigs, including those that need companionship due to their social nature. The guarantor required this site to be dynamic, user-friendly and capable of frequent updates, as changes were anticipated multiple times a week. Additionally, it was critical that the site be fully responsive and accessible.
+The organisation approached us, seeking a website with excellent SEO performance and discoverability within their specific sector. An essential requirement was the provision of an online platform where potential adopters could view recently rescued guinea pigs, including those that need companionship due to their social nature. The guarantor required this site to be dynamic, user-friendly and capable of frequent updates, as changes were anticipated multiple times a week. Additionally, it was critical that the site be fully responsive and accessible.
 
 **Solution**
 
-Due to the client's non-technical background, we aimed to integrate a user-friendly, no-code solution to serve as the data source for the new application. We contemplated using a purpose-built CMS. However, upon careful deliberation, it was clear that such a solution might bring unnecessary complexity and a surplus of features. Thus, we chose to utilize a simple Notion database; it offers a comprehensive API allowing both writing and access to data, adequately fulfilling the identified needs.
+Due to the client's non-technical background, we aimed to integrate a user-friendly, no-code solution to serve as the data source for the new application. We contemplated using a purpose-built CMS. However, upon careful deliberation, it was clear that such a solution might bring unnecessary complexity and a surplus of features. Thus, we chose to utilise a simple Notion database; it offers a comprehensive API allowing both writing and access to data, adequately fulfilling the identified needs.
 
 **Dynamic Data**
 
@@ -40,4 +40,4 @@ For the web application to remain relevant and timely, it was crucial to facilit
 
 **Conclusion**
 
-In conclusion, the successful implementation of this project not only provided a significant online presence for 'This Little Piggy Richmond' but also met the specific requirements of the client with precision. Leveraging the user-friendly interface of Notion and the flexibility of Next.js, we were able to create a dynamic, accessible, and easy-to-update platform. This accomplishment empowers the organization to continue their noble cause of rescuing and rehoming guinea pigs seamlessly. Furthermore, the selection of technologies underpins the site’s sustainability, ensuring scalability to match the organization's future growth.
+In conclusion, the successful implementation of this project not only provided a significant online presence for 'This Little Piggy Richmond' but also met the specific requirements of the client with precision. Leveraging the user-friendly interface of Notion and the flexibility of Next.js, we were able to create a dynamic, accessible, and easy-to-update platform. This accomplishment empowers the organisation to continue their noble cause of rescuing and rehoming guinea pigs seamlessly. Furthermore, the selection of technologies underpins the site’s sustainability, ensuring scalability to match the organisation's future growth.

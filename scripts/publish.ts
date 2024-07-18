@@ -14,7 +14,6 @@ function checkRequiredFields(fields: Record<string, unknown>) {
 		"githubUrl",
 		"coverImageUrl",
 		"tags",
-		"caseStudyUrl",
 		"tech",
 		"wip",
 	];
