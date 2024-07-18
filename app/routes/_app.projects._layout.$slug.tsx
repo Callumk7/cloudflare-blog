@@ -47,7 +47,6 @@ export default function ProjectsPage() {
 											className="object-cover object-center w-full h-full"
 										/>
 									</div>
-									<figcaption className="mt-3 font-mono text-center">{image}</figcaption>
 								</figure>
 							</CarouselItem>
 						))}

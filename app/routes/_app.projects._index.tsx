@@ -18,6 +18,10 @@ export default function ProjectsIndex() {
 	const { projects } = useLoaderData<typeof loader>();
 	const [searchTerm, setSearchTerm] = useState("");
 
+	const projectResults = projects.filter((proj) =>
+		proj.name.toLowerCase().includes(searchTerm.toLowerCase()),
+	);
+
 	return (
 		<Container width={"mobMax"}>
 			<Title title="Projects" />
@@ -32,7 +36,7 @@ export default function ProjectsIndex() {
 				</p>
 			</div>
 			<ProjectSearchAndFilter searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-			<ProjectTable projects={projects} />
+			<ProjectTable projects={projectResults} />
 		</Container>
 	);
 }
@@ -46,10 +50,13 @@ function ProjectSearchAndFilter({
 	setSearchTerm,
 }: ProjectSearchAndFilterProps) {
 	return (
-		<input
-			className="border p-3 rounded-md border-foreground/20 bg-background"
-			value={searchTerm}
-			onInput={(e) => setSearchTerm(e.currentTarget.value)}
-		/>
+		<label className="flex flex-col gap-1">
+			Search
+			<input
+				className="border p-1 rounded-md border-foreground/20 bg-background"
+				value={searchTerm}
+				onInput={(e) => setSearchTerm(e.currentTarget.value)}
+			/>
+		</label>
 	);
 }
