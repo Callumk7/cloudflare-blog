@@ -26,7 +26,7 @@ tech:
   - cloudflare
 wip: false
 cvDescription: In order to learn the accessible component library from adobe, I created this project to combine various principles such as optimistic updates, serverless environments and monorepos.
-screenshotCount: 3
+screenshotCount: 5
 ---
 ## Game Master
 

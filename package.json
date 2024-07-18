@@ -5,8 +5,9 @@
 	"type": "module",
 	"scripts": {
 		"build": "remix vite:build",
-		"publish": "tsx scripts/publish.ts",
+		"build:data": "tsx scripts/publish.ts",
 		"deploy": "wrangler pages deploy ./build/client",
+        "deploy:images": "tsx scripts/aws-image-upload.ts",
 		"dev": "remix vite:dev",
 		"lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
 		"start": "wrangler pages dev ./build/client --kv=POSTS",
