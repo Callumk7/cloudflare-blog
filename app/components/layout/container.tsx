@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { cva, VariantProps } from "class-variance-authority";
 
-const containerVariants = cva("space-y-10", {
+const containerVariants = cva("space-y-6", {
   variants: {
     width: {
       normal: "mx-auto w-10/12 lg:w-4/5",

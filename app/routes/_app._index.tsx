@@ -5,7 +5,7 @@ import PostList from "@/components/home/post-list";
 import { Container } from "@/components/layout/container";
 import { H2 } from "@/components/layout/headers";
 import { Separator } from "@/components/layout/separator";
-import { ProjectCard } from "@/components/projects/project-card";
+import { ProjectList } from "@/components/projects/project-list";
 import { LoaderFunctionArgs, json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
 
@@ -21,17 +21,17 @@ export default function AppIndex() {
 	const { recentPosts, completedProjects } = useLoaderData<typeof loader>();
 	return (
 		<Container className="my-10" width={"mobMax"}>
-			<div className="gap-x-4 lg:grid lg:grid-cols-2">
+			<div className="gap-x-6 lg:grid lg:grid-cols-2">
 				<Portrait />
-				<PostList posts={recentPosts} />
+        <div>
+          <H2>Projects</H2>
+          <p className="mb-8">I design and build accessible, engaging and delightful digital experiences.</p>
+          <ProjectList projects={completedProjects} />
+        </div>
 			</div>
 			<Separator className="my-8" />
-			<H2>Featured Projects</H2>
-			<div className="grid gap-4 lg:grid-cols-3">
-				{completedProjects.map((project) => (
-					<ProjectCard key={project.slug} project={project} />
-				))}
-			</div>
+			<H2>Recent Posts</H2>
+			<PostList posts={recentPosts} />
 		</Container>
 	);
 }
