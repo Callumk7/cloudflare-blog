@@ -8,11 +8,11 @@ githubUrl: https://github.com/Callumk7/frontline-v2-remix
 tags:
   - react
   - remix
-  - cloudflare
   - supabase
   - typescript
+  - flydotio
 caseStudyUrl: /blog/introducing-playq-a-cuttingedge-videogame-playlist-manager
-related: []
+related: 
 tech:
   - react
   - postgres
@@ -25,35 +25,40 @@ wip: false
 cvDescription: I built a playlist management solution that supports server side rendering (SSR), user authentication, aggregated scores and ratings, and a user activity feed. The app uses React and Remix as the full stack framework, with some additional asyncronous tasks offloaded to a cloudflare application.
 screenshotCount: 3
 ---
-I built playQ to put together a complex CRUD application from scratch. The product is built using React, Radix components, Postgres managed by Supabase on the backend with Drizzle as the ORM. State is almost entirely managed through Remix's loaders and actions with some component level `useState` where required. This ensures that I have a good level of consistency with the backend when making mutations, but comes with some additional complexity when implementing optimistic updates in the UI.  
+I built **playQ**, a complex CRUD application designed to manage video game collections and playlists. The application leverages modern web technologies to provide a seamless user experience for managing and exploring video games.
 
-# Features
+**Features**
 
-| Feature                                                                                     | Description |
-| ------------------------------------------------------------------------------------------- | ----------- |
-| Activity Feed                                                                               |             |
-| Create, edit, and remove playlists                                                          |             |
-| Add games to a collection                                                                   |             |
-| Track played and completed progress                                                         |             |
-| Table and grid views for playlists and collections                                          |             |
-| An integrated external (IGDB) and internal (owned database) search for better cache control |             |
-| Server rendered components (no waterfalls)                                                  |             |
-| Search, filter, and sort functionality                                                      |             |
-| Friends, Comments                                                                           |             |
-| User authentication                                                                         |             |
+- **User Authentication**: Secure user login and registration powered by Supabase.
+- **Database Search and Filtering**: Efficient search functionality to find games in the database.
+- **Personal Collections**: Save and organise games into personal collections.
+- **Playlists**: Create, edit, and manage playlists of games.
+- **Social Features**: Find and follow other users, track their playlists, and see their game progress.
+- **Activity Feed**: Highlights key activities of friends.
+- **Comment System**: Comment on games, playlists, and user profiles.
+- **Game Discovery**: Explore games based on popularity and user ratings.
+- **Media Integration**: Video game artwork and screenshots provided by IGDB.
 
-PlayQ is a game management application that allows users to create and track lists of video games, known as playlists. It provides a comprehensive platform for users to keep track of games they've played, want to play, or are currently playing.
+**Technology Used**
 
-## playQ - A Learning Project
+**Supabase**
+Supabase is utilised for authentication and database management. It offers real-time subscriptions and auto-generated APIs, providing the versatility of PostgreSQL while replicating some Firebase features.
 
-PlayQ is not just a game playlist management app, it's also a comprehensive learning project that incorporates a variety of advanced technologies:
+**Remix and React**
+The UI, routing, and data loading are built with Remix and React. Remix enhances user experience with server-side rendering on initial load and efficient data fetching for client-side navigation.
 
-**Supabase** - PlayQ uses Supabase for authentication and database management. Supabase is an open-source Firebase alternative that replicates some of its features like real-time subscriptions and auto-generated APIs, while offering the versatility of PostgreSQL.
+**DrizzleORM**
+DrizzleORM handles the app's Object-Relational Mapping (ORM). It simplifies data operations like inserting, updating, or querying data, and provides robust tools for managing database schema migrations.
 
-**Remix and React** - The user interface (UI), routing, and data loading are built with Remix and React. Remix is a powerful web framework for React that priorities user experience, while React facilitates building reusable UI components efficiently.
+**Radix-UI and Shadcn Inspired Components**
+The app uses Radix-UI for low-level, accessible, and unstyled UI components, offering a developer-friendly declarative API. The UI design is influenced by Shadcn styled-components, promoting a modern and minimalist aesthetic.
 
-**DrizzleORM** - The app's Object-Relational Mapping (ORM) is handled by DrizzleORM. With DrizzleORM, JavaScript objects are mapped to database tables, simplifying data operations like inserting, updating, or querying data.
+**Tailwind CSS**
+Tailwind CSS is used for atomic styling with utility classes. It integrates well with Radix and can be combined with conditional class libraries like clsx and class-variance-authority to rapidly build expressive design systems.
 
-**Radix-UI and Shad/cn Inspired Components** - To further refine the user interface, the app uses Radix-UI, a library of low-level, accessible and unstyled UI components for building high-quality web interfaces. The UI design is also influenced by ShaD/CN styled-components, favouring a modern and minimalist aesthetic.
+[**Fly.io**](http://Fly.io)
+The application is deployed on [Fly.io](http://Fly.io), chosen for its easy deployment, scalability, and serverful runtime, which fully utilises Node.js's capabilities.
 
-By using these technologies, PlayQ showcases how sophisticated tech stacks can be combined for efficient coding practices and superior user experience.
+**Cloudflare Workers**
+Serverless functions are employed for asynchronous tasks. A custom API accessed via a Cloudflare Worker offloads large writes to the database, ensuring smooth user flow when saving game data.
+
