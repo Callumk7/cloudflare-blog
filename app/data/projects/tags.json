@@ -1,11 +1,12 @@
 {
   "react": 5,
   "remix": 5,
-  "cloudflare": 4,
+  "cloudflare": 3,
   "turso": 1,
   "typescript": 3,
   "react-aria-components": 1,
   "supabase": 2,
+  "flydotio": 1,
   "ssr": 1,
   "nextjs": 1
 }
