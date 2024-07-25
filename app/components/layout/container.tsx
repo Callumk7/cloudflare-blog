@@ -17,15 +17,17 @@ const containerVariants = cva("space-y-6", {
 
 interface ContainerProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof containerVariants> {
+  VariantProps<typeof containerVariants> {
   children: React.ReactNode;
   className?: string;
 }
 
 export function Container({ children, className, width, ...props }: ContainerProps) {
   return (
-    <div className={clsx(containerVariants({ className, width }))} {...props}>
-      {children}
+    <div>
+      <div className={clsx(containerVariants({ className, width }))} {...props}>
+        {children}
+      </div>
     </div>
   );
 }

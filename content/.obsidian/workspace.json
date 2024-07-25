@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/this-little-piggy.md",
+                "file": "projects/playq.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 284.5
+    "width": 284.5,
+    "collapsed": true
   },
   "right": {
     "id": "3f4588c22704d497",
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/this-little-piggy.md",
+                "file": "projects/playq.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/this-little-piggy.md",
+                "file": "projects/playq.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/this-little-piggy.md"
+                "file": "projects/playq.md"
               }
             }
           }
@@ -166,6 +167,7 @@
   },
   "active": "b7664ef4cc863a7a",
   "lastOpenFiles": [
+    "projects/this-little-piggy.md",
     "projects/game-master.md",
     "projects/playq.md",
     "archive",
@@ -181,7 +183,6 @@
     "archive/open-letter-to-recruiters.md",
     "posts/notion-as-a-backend.md",
     "projects/spotify-shared-playlists.md",
-    "projects/this-little-piggy.md",
     "projects/recollect.md",
     "~~.md",
     "Untitled 2.md",

@@ -19,6 +19,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
 				{project.name}
 			</h1>
 			<p className="pb-2 font-mono">{project.description}</p>
+			<div className="flex flex-wrap gap-2">
+				{project.tech.map((label) => (
+					<span className="text-xs px-2 py-1 rounded-full bg-sky-900/70 text-sky-200" key={label}>{label}</span>
+				))}
+			</div>
 			<div className="absolute right-4 bottom-4">
 				<Button variant={"ghost"} size={"icon"} asChild>
 					<a

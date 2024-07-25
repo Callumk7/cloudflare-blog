@@ -25,6 +25,22 @@ wip: false
 cvDescription: I built a playlist management solution that supports server side rendering (SSR), user authentication, aggregated scores and ratings, and a user activity feed. The app uses React and Remix as the full stack framework, with some additional asyncronous tasks offloaded to a cloudflare application.
 screenshotCount: 3
 ---
+I built playQ to put together a complex CRUD application from scratch. The product is built using React, Radix components, Postgres managed by Supabase on the backend with Drizzle as the ORM. State is almost entirely managed through Remix's loaders and actions with some component level `useState` where required. This ensures that I have a good level of consistency with the backend when making mutations, but comes with some additional complexity when implementing optimistic updates in the UI.  
+
+# Features
+
+| Feature                                                                                     | Description |
+| ------------------------------------------------------------------------------------------- | ----------- |
+| Activity Feed                                                                               |             |
+| Create, edit, and remove playlists                                                          |             |
+| Add games to a collection                                                                   |             |
+| Track played and completed progress                                                         |             |
+| Table and grid views for playlists and collections                                          |             |
+| An integrated external (IGDB) and internal (owned database) search for better cache control |             |
+| Server rendered components (no waterfalls)                                                  |             |
+| Search, filter, and sort functionality                                                      |             |
+| Friends, Comments                                                                           |             |
+| User authentication                                                                         |             |
 
 PlayQ is a game management application that allows users to create and track lists of video games, known as playlists. It provides a comprehensive platform for users to keep track of games they've played, want to play, or are currently playing.
 
