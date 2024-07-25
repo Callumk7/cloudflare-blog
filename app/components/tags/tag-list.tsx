@@ -14,7 +14,7 @@ export function TagList({ tags, className }: TagListProps) {
     <div className={clsx([className, "flex flex-wrap gap-x-7 gap-y-2"])}>
       {Object.entries(tags).map(([tag, count]) => (
         <div key={tag} className="flex flex-row gap-2">
-          <Link to={`/blog/tags/${tag}`} className="font-mono underline text-primary-1">
+          <Link to={`/blog/tags/${tag}`} className="link">
             {tag}
           </Link>
           <p className="">({count})</p>
