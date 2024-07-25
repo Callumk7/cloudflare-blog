@@ -18,7 +18,7 @@ export const getAllPostData = async (context: AppLoadContext): Promise<Post[]> =
 };
 
 export const getPostTags = async (context: AppLoadContext): Promise<Tags> => {
-	const tagData = await context.cloudflare.env.POSTS.get("tagData");
+	const tagData = await context.cloudflare.env.POSTS.get("postTagData");
 
 	if (!tagData) {
 		return {};
