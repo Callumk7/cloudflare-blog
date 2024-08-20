@@ -1,6 +1,6 @@
 import { unified } from "unified";
-// import prism from "remark-prism";
 import parse from "remark-parse";
+import remarkCallout from "@r4ai/remark-callout";
 import rehype from "remark-rehype";
 import remarkGfm from "remark-gfm";
 import stringify from "rehype-stringify";
@@ -11,6 +11,7 @@ export async function markdownToHtml(markdown: string) {
 	const result = await unified()
 		.use(parse)
 		.use(remarkGfm)
+		.use(remarkCallout)
 		.use(rehype)
 		.use(rehypeShiki, {
 			theme: "houston",

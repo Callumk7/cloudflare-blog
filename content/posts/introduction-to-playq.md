@@ -5,9 +5,6 @@ projectShortName: "playq"
 coverImageUrl: "https://ck-portfolio-images.s3.eu-west-2.amazonaws.com/images/projects/playq/1.png"
 date: "2024-02-25"
 tags: ["playQ"]
-author:
-    name: "Callum Kloos"
-    imageUrl: "/avatar.jpeg"
 ---
 
 At its core, [playQ](/projects/playq-videogame-playlist-manager)  is a sophisticated game management platform that empowers users to create, curate, and share personalised playlists of video games. With an intuitive interface and robust feature set, playQ redefines the way gamers interact with their collections, fostering a more immersive and social gaming experience.

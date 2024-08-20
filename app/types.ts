@@ -5,14 +5,8 @@ interface Post {
 	content: string;
 	coverImageUrl: string;
 	date: string;
-	author: Author;
 	tags: string[];
 	slug: string;
-}
-
-interface Author {
-	name: string;
-	imageUrl: string;
 }
 
 interface Project {
@@ -51,4 +45,4 @@ type Tags = Record<string, number>;
 
 type KV_KEYS = "postData" | "postTagData" | "projectData" | "projectTagData";
 
-export type { Post, Project, Author, Tags, Photo, KV_KEYS };
+export type { Post, Project, Tags, Photo, KV_KEYS };

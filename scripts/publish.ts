@@ -48,9 +48,9 @@ const getPostDataFromFile = async (filePath: PathLike): Promise<Post> => {
 	// perform the content transformation here, to improve request time
 	const htmlContent = await markdownToHtml(content);
 
-	const { title, description, projectShortName, coverImageUrl, date, author, tags } =
+	const { title, description, projectShortName, coverImageUrl, date, tags } =
 		data;
-	if (!title || !description || !coverImageUrl || !date || !author || !tags) {
+	if (!title || !description || !coverImageUrl || !date || !tags) {
 		throw new Error("A required field is missing");
 	}
 
@@ -64,7 +64,6 @@ const getPostDataFromFile = async (filePath: PathLike): Promise<Post> => {
 		content: htmlContent,
 		coverImageUrl,
 		date,
-		author,
 		tags,
 		slug,
 	};

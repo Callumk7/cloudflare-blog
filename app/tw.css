@@ -3,49 +3,60 @@
 @tailwind utilities;
 
 :root {
-  --background: 180 5% 4%;
-  --foreground: 65 17% 92%;
-
-  --background-hover: 180 5% 6%;
-  --background-hover-light: 180 6% 15%;
-  --background-accent: 180 3% 15%;
-
-  --primary-1: 28 89.2% 81.8%;
-  --primary-2: 28 89.2% 81.8%;
-  --primary-3: 28 89.2% 81.8%;
-
-  --ring: 65 8% 95%;
-  --accent: 180 5% 10%;
+    --background: 180 5% 4%;
+    --foreground: 65 17% 92%;
+    --background-hover: 180 5% 6%;
+    --background-hover-light: 180 6% 15%;
+    --background-accent: 180 3% 15%;
+    --primary-1: 28 89.2% 81.8%;
+    --primary-2: 28 89.2% 81.8%;
+    --primary-3: 28 89.2% 81.8%;
+    --ring: 65 8% 95%;
+    --accent: 180 5% 10%;
 }
 
-/* some default styles */
 @layer base {
-  .link {
-    @apply text-violet-300 underline transition-colors ease-in-out hover:text-violet-400;
-  }
+    .link {
+        @apply text-violet-300 underline transition-colors ease-in-out hover:text-violet-400;
+    }
+
+    [data-callout] {
+        @apply rounded-md my-14;
+    }
+
+    [data-callout][data-callout-type="note"] {
+        @apply p-4 border-l-4 bg-blue-950 border-blue-500;
+    }
+
+    [data-callout-title] {
+        @apply font-bold font-syne text-xl mb-1 text-blue-400;
+    }
+
+    [data-callout-body] {
+        @apply text-blue-200;
+    }
 }
 
-/* Sidebar styling for different browsers */
 html {
-  overflow-y: scroll;
-  scrollbar-width: thin; /* for firefox */
-  scrollbar-color: hsl(var(--primary-2)) hsl(var(--background)); /* for firefox */
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--primary-2)) hsl(var(--background));
 }
 
 ::-webkit-scrollbar {
-  width: 6px; /* for vertical scrollbars */
-  height: 6px; /* for horizontal scrollbars */
+    width: 6px;
+    height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(var(--background));
+    background: hsl(var(--background));
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--primary-2));
-  border-radius: 6px;
+    background: hsl(var(--primary-2));
+    border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--primary-1));
+    background: hsl(var(--primary-1));
 }

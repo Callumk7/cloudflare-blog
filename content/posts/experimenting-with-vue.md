@@ -7,9 +7,6 @@ date: 2024-07-16
 tags:
   - vue
   - web
-author:
-  name: Callum Kloos
-  imageUrl: /avatar-scaled.jpg
 ---
 ## What is Vue
 Vue.js, often lovingly referred to as just "Vue", is a progressive JavaScript framework for building user interfaces. It's the brainchild of Evan You, who set out to extract the parts he liked about Angular and build something lightweight and flexible.
