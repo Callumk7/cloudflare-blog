@@ -2,12 +2,12 @@
 title: PlayQ Developer Update
 description: A brief reflection on my time building playQ.
 projectShortName: playq
-coverImageUrl: https://res.cloudinary.com/practicaldev/image/fetch/s--q6AIFazN--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ll22z8mea106b4vjdjy7.jpeg
-date: 2024-07-16
+coverImageUrl: https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+date: 2024-08-11
 tags: ["web development", "updates"]
 ---
 
-Welcome to the first, (and probably the last.. read on) developer update of my playQ playlist project.
+Welcome to the first developer update for playQ, the playlist building app. As you will see, this is likely going to be the *last* developer update on this project as well.
 
 > [!NOTE] Going Forward...
 > This is something that I want to do more, going forward, for all my projects. I am yet to decide if this will be done on a per-project basis, or in a time-based basis. But I want to practice working in public, and having that extra level of accountability.
