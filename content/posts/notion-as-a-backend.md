@@ -6,7 +6,6 @@ coverImageUrl: "https://static0.makeuseofimages.com/wordpress/wp-content/uploads
 date: "2024-02-14"
 tags: ["web development", "backend"]
 ---
-
 When designing the new website for [This Little Piggy Richmond](/projects/this-little-piggy-richmond) , a non-profit organisation dedicated to rehoming guinea pigs, the top priority was a simple and efficient system for adding content to the website. The organisation needed a solution that allowed them to move quickly without being bogged down by complex processes or systems prone to errors and frustration. The website is a crucial part of their work, and the ability to update it promptly was key.
 
 ## The Challenge: High Turnover and Cute Content

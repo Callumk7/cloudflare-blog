@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/playq.md",
+                "file": "posts/notion-as-a-backend.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 284.5,
-    "collapsed": true
+    "width": 284.5
   },
   "right": {
     "id": "3f4588c22704d497",
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "projects/playq.md",
+                "file": "posts/notion-as-a-backend.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "projects/playq.md",
+                "file": "posts/notion-as-a-backend.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "projects/playq.md"
+                "file": "posts/notion-as-a-backend.md"
               }
             }
           }
@@ -167,18 +166,21 @@
   },
   "active": "b7664ef4cc863a7a",
   "lastOpenFiles": [
-    "projects/playq.md~",
-    "projects/this-little-piggy.md",
-    "projects/game-master.md",
-    "projects/playq.md",
-    "archive",
     "posts/experimenting-with-vue.md",
-    "Pasted image 20240716144010.png",
+    "posts/introduction-to-playq.md",
     "wip/ai-notes.md",
-    "wip/working-with-images.md",
     "wip/working-with-different-data-fetching-patterns-in-react.md",
-    "wip",
+    "wip/working-with-images.md",
     "templates/post-template.md",
+    "posts/playq-final-update.md",
+    "projects/game-master.md",
+    "projects/this-little-piggy.md",
+    "projects/this-little-piggy.md~",
+    "projects/playq.md",
+    "projects/playq.md~",
+    "archive",
+    "Pasted image 20240716144010.png",
+    "wip",
     "Hello.md",
     "archive/cv-announcement.md",
     "archive/open-letter-to-recruiters.md",
@@ -188,7 +190,6 @@
     "~~.md",
     "Untitled 2.md",
     "Untitled 1.md",
-    "posts/introduction-to-playq.md",
     "templates/cv-announcement.md",
     "templates/Post Template.md",
     "templates",
@@ -203,12 +204,10 @@
     "Home.canvas",
     "_archive",
     "Learning",
-    "Projects/Wine Tours",
     "AI Notes/Untitled.canvas",
     "Projects/Game Master/Ai dnd helper.canvas",
     "attachments/Untitled(1).svg",
     "Job Hunting/Technical Skills.canvas",
-    "Projects",
     "attachments/Basic stack.svg",
     "attachments/Basic sidebar.svg",
     "attachments/Database design.svg",
