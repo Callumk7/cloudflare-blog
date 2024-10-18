@@ -24,7 +24,6 @@ wip: false
 cvDescription: In order to learn the accessible component library from adobe, I created this project to combine various principles such as optimistic updates, serverless environments and monorepos.
 screenshotCount: 5
 ---
-
 Game Master is a note-taking app aimed at table-top role playing game players. I wanted to provide a platform that provided a clean and simple note taking experience, with an opinionated strategy for note taking for gaming, as well as both an editor client and a wiki-like read-only experience for players. 
 
 I built the initial prototype of the editor and backend using a few technologies that I was excited to try out. These included:
@@ -35,7 +34,7 @@ I built the initial prototype of the editor and backend using a few technologies
 
 As I was going to be working on this project solo, I was drawn to the idea of serverless deployment targets, as they offload many traditional dev ops burdens such as load management and scaling up and down based on traffic. In addition, nearly all full stack frameworks these days have nice integrations into the serverless platforms, so I can enjoy features like automatic deployments from git commits, and easy roll back to stable releases. I went for **Cloudflare** because I had already toyed with cloudflare workers in the past and enjoyed the experience, and they have recently been releasing some cool stuff like D2 databases, KV stores, and nice, easy to use APIs for open source AI LLMs. 
 
-**Turso**  was a product I was interested in trying out alongside this, as it was intially selling itself as a kind of serverless database solution. Whilst that messaging has changed, they are essentially a distributed and easily replicatable SQLite database that can be interacted with through a client, or your ORM of choice. As I was going to be deploying serverless for my prototype, it seemed a good time to try them out, especially considering the generous free tier. 
+**Turso**  was a product I was interested in trying out alongside this, as it was initially selling itself as a kind of serverless database solution. Whilst that messaging has changed, they are essentially a distributed and easily duplicatable SQLite database that can be interacted with through a client, or your ORM of choice. As I was going to be deploying serverless for my prototype, it seemed a good time to try them out, especially considering the generous free tier. 
 
 Finally, I have lots of experience with Radix UI as a headless accessible component library for react, and I wanted to try out an alternative in the headless UI space. React Aria Components is an open source project by Adobe, and so the long term backing makes it an attractive library. The collections API is very interesting, and I was excited to see how it compared to Radix.
 
@@ -49,7 +48,7 @@ After learning a lot about adobe's components, I re-wrote the product to utilise
 
 ## End to End Type Safety
 
-I love typescript, and being able to have type-safe http requests inside the client is a huge productivity boost. In order to achieve that though, it is critical to have a single source of truth between client what the client is expecting to recieve, and what the server is sending. By ensuring that that contract is handled in a separate package, I can achieve this whilst reducing runtime validation to the smallest amount required. 
+I love typescript, and being able to have type-safe http requests inside the client is a huge productivity boost. In order to achieve that though, it is critical to have a single source of truth between client what the client is expecting to receive, and what the server is sending. By ensuring that that contract is handled in a separate package, I can achieve this whilst reducing runtime validation to the smallest amount required. 
 
 ### Setup
 

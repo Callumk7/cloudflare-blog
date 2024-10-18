@@ -8,24 +8,42 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a177817679a666fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "archive/open-letter-to-recruiters.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
             "id": "b7664ef4cc863a7a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/notion-as-a-backend.md",
+                "file": "wip/game-master-project-update.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "809f4cd055bddddb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bfa0aa8f0c1d39b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wip/game-master-project-update.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "adc4cac91907151a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/game-master.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/notion-as-a-backend.md",
+                "file": "wip/game-master-project-update.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/notion-as-a-backend.md",
+                "file": "wip/game-master-project-update.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/notion-as-a-backend.md"
+                "file": "wip/game-master-project-update.md"
               }
             }
           }
@@ -166,6 +184,11 @@
   },
   "active": "b7664ef4cc863a7a",
   "lastOpenFiles": [
+    "projects/game-master.md",
+    "wip/game-master-project-update.md",
+    "wip/zod-monorepo-typesafety.md",
+    "wip/a-little-about-me.md",
+    "posts/notion-as-a-backend.md",
     "posts/experimenting-with-vue.md",
     "posts/introduction-to-playq.md",
     "wip/ai-notes.md",
@@ -173,7 +196,6 @@
     "wip/working-with-images.md",
     "templates/post-template.md",
     "posts/playq-final-update.md",
-    "projects/game-master.md",
     "projects/this-little-piggy.md",
     "projects/this-little-piggy.md~",
     "projects/playq.md",
@@ -184,7 +206,6 @@
     "Hello.md",
     "archive/cv-announcement.md",
     "archive/open-letter-to-recruiters.md",
-    "posts/notion-as-a-backend.md",
     "projects/spotify-shared-playlists.md",
     "projects/recollect.md",
     "~~.md",
@@ -198,9 +219,6 @@
     "Welcome.md",
     "projects",
     "posts",
-    "2024-06-16.md",
-    "Projects Home Page.md",
-    "Projects/playQ/playQ - External Store Integrations.md",
     "Home.canvas",
     "_archive",
     "Learning",
