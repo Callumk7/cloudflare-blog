@@ -20,9 +20,9 @@ export default function WipProjects() {
       <Title title="Work In Progress" />
       <div className="max-w-none prose prose-invert">
         <p>
-          This is the stuff that is not ready for presentation. Ideas, tinkering
-          projects, or just need more thought. If you have some ideas, please do
-          reach out! Otherwise{" "}
+          This is the stuff that is not ready for presentation. Ideas, tinkering projects,
+          or just need more thought. If you have some ideas, please do reach out!
+          Otherwise{" "}
           <Link to={"/projects"} className="link">
             Head back to the projects page
           </Link>

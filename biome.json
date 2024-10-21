@@ -29,6 +29,7 @@
 		{
 			"include": ["*.jsx", "*.tsx"],
 			"formatter": {
+                "indentStyle": "space",
 				"indentWidth": 2
 			}
 		}
