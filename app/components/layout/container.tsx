@@ -17,7 +17,7 @@ const containerVariants = cva("space-y-6", {
 
 interface ContainerProps
   extends React.HTMLAttributes<HTMLDivElement>,
-  VariantProps<typeof containerVariants> {
+    VariantProps<typeof containerVariants> {
   children: React.ReactNode;
   className?: string;
 }

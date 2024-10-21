@@ -23,7 +23,7 @@
 		"indentWidth": 4,
 		"lineWidth": 90,
 		"lineEnding": "lf",
-		"ignore": []
+		"ignore": ["app/data/**/*"]
 	},
 	"overrides": [
 		{

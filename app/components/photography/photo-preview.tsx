@@ -7,16 +7,14 @@ interface PhotoPreviewProps {
 
 export function PhotoPreview({ photo, size }: PhotoPreviewProps) {
   return (
-    <div
-      className="block overflow-hidden relative w-full h-full duration-200 ease-in delay-100 group animate-in fade-in"
-    >
+    <div className="block overflow-hidden relative w-full h-full duration-200 ease-in delay-100 group animate-in fade-in">
       <img
         src={
           size === "sm"
             ? photo.urls.small
             : size === "lg"
-            ? photo.urls.regular
-            : photo.urls.raw
+              ? photo.urls.regular
+              : photo.urls.raw
         }
         alt={photo.alt_description}
         className="object-cover object-center w-full h-full"

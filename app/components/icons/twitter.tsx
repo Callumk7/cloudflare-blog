@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-export const Twitter = ({className}: {className?: string}) => {
+export const Twitter = ({ className }: { className?: string }) => {
   return (
     <svg
       width="24"

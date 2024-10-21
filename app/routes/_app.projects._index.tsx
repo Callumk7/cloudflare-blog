@@ -7,56 +7,56 @@ import { Link, useLoaderData } from "@remix-run/react";
 import { useState } from "react";
 
 export const loader = async ({ context }: LoaderFunctionArgs) => {
-	const allProjects = await getAllProjectData(context);
+  const allProjects = await getAllProjectData(context);
 
-	const projects = allProjects.filter((project) => !project.wip);
+  const projects = allProjects.filter((project) => !project.wip);
 
-	return json({ projects });
+  return json({ projects });
 };
 
 export default function ProjectsIndex() {
-	const { projects } = useLoaderData<typeof loader>();
-	const [searchTerm, setSearchTerm] = useState("");
+  const { projects } = useLoaderData<typeof loader>();
+  const [searchTerm, setSearchTerm] = useState("");
 
-	const projectResults = projects.filter((proj) =>
-		proj.name.toLowerCase().includes(searchTerm.toLowerCase()),
-	);
+  const projectResults = projects.filter((proj) =>
+    proj.name.toLowerCase().includes(searchTerm.toLowerCase()),
+  );
 
-	return (
-		<Container width={"mobMax"}>
-			<Title title="Projects" />
-			<div className="max-w-none prose prose-invert">
-				<p>
-					Take a look at some of the projects that I have been working on recently. Do let
-					me know if you see anything that you like. In addition, feel free to checkout my{" "}
-					<Link to={"/projects/wip"} className="link">
-						Work In Progress
-					</Link>{" "}
-					page, for some ideas about what I am tinkering with in my free time.
-				</p>
-			</div>
-			<ProjectSearchAndFilter searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-			<ProjectTable projects={projectResults} />
-		</Container>
-	);
+  return (
+    <Container width={"mobMax"}>
+      <Title title="Projects" />
+      <div className="max-w-none prose prose-invert">
+        <p>
+          Take a look at some of the projects that I have been working on recently. Do let
+          me know if you see anything that you like. In addition, feel free to checkout my{" "}
+          <Link to={"/projects/wip"} className="link">
+            Work In Progress
+          </Link>{" "}
+          page, for some ideas about what I am tinkering with in my free time.
+        </p>
+      </div>
+      <ProjectSearchAndFilter searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <ProjectTable projects={projectResults} />
+    </Container>
+  );
 }
 
 interface ProjectSearchAndFilterProps {
-	searchTerm: string;
-	setSearchTerm: (searchTerm: string) => void;
+  searchTerm: string;
+  setSearchTerm: (searchTerm: string) => void;
 }
 function ProjectSearchAndFilter({
-	searchTerm,
-	setSearchTerm,
+  searchTerm,
+  setSearchTerm,
 }: ProjectSearchAndFilterProps) {
-	return (
-		<label className="flex flex-col gap-1">
-			Search
-			<input
-				className="border p-1 rounded-md border-foreground/20 bg-background"
-				value={searchTerm}
-				onInput={(e) => setSearchTerm(e.currentTarget.value)}
-			/>
-		</label>
-	);
+  return (
+    <label className="flex flex-col gap-1">
+      Search
+      <input
+        className="border p-1 rounded-md border-foreground/20 bg-background"
+        value={searchTerm}
+        onInput={(e) => setSearchTerm(e.currentTarget.value)}
+      />
+    </label>
+  );
 }
