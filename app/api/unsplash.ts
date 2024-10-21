@@ -11,16 +11,10 @@ export async function getRandomPhotos(
 ) {
 	const endpoint = "photos/random";
 	let requestUrl =
-		url +
-		"/" +
-		endpoint +
-		"?count=" +
-		count.toString() +
-		"&orientation=" +
-		orientation;
+		`${url}/${endpoint}?count=${count.toString()}&orientation=${orientation}`;
 
 	if (query) {
-		requestUrl += "&query=" + query;
+		requestUrl += `&query=${query}`;
 	}
 
 	const res = await fetch(requestUrl, {
@@ -37,7 +31,7 @@ export async function getRandomPhotos(
 // NOT USED
 export async function getPhotoWithId(context: AppLoadContext, id: string) {
 	const endpoint = "photos";
-	const requestUrl = url + "/" + endpoint + "/" + id;
+	const requestUrl = `${url}/${endpoint}/${id}`;
 
 	const res = await fetch(requestUrl, {
 		method: "GET",
