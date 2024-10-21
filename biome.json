@@ -5,6 +5,7 @@
 	},
 	"linter": {
 		"enabled": true,
+        "ignore": ["app/entry.client.tsx", "app/entry.server.tsx"],
 		"rules": {
 			"recommended": true,
 			"style": {
@@ -23,7 +24,7 @@
 		"indentWidth": 4,
 		"lineWidth": 90,
 		"lineEnding": "lf",
-		"ignore": ["app/data/**/*"]
+		"ignore": ["a/pp/data/**/*"]
 	},
 	"overrides": [
 		{
