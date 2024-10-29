@@ -22,7 +22,7 @@ export const loader = async ({ context, params }: LoaderFunctionArgs) => {
     return redirect("/projects");
   }
 
-  const images = getProjectImageSrcs(context, project);
+  const images = getProjectImageSrcs(context, project, "sm");
   return json({ project, images });
 };
 

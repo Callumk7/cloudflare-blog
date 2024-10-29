@@ -53,15 +53,39 @@ export const getProjectPosts = async (
 export const getProjectImageSrcs = (
 	context: AppLoadContext,
 	project: Project,
+	size?: "sm" | "md" | "lg" | "thumb",
 ): string[] => {
 	if (!project.screenshotCount) {
 		return [];
 	}
 
-	const { shortName, screenshotCount } = project;
 	const images = [];
+	const { shortName, screenshotCount } = project;
 
 	for (let i = 1; i <= screenshotCount; i++) {
+		let url = `${context.cloudflare.env.S3_URL}/images/projects/${shortName}`;
+		if (size) {
+			switch (size) {
+				case "sm":
+					url += `/${i}/resized/640.png`;
+					break;
+				case "md":
+					url += `/${i}/resized/1024.png`;
+					break;
+				case "lg":
+					url += `/${i}/resized/1920.png`;
+					break;
+				case "thumb":
+					url += `/${i}/resized/thumb.png`;
+					break;
+
+				default:
+					break;
+			}
+
+			images.push(url);
+			continue;
+		}
 		images.push(
 			`${context.cloudflare.env.S3_URL}/images/projects/${shortName}/${i}.png`,
 		);

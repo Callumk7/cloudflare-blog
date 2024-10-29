@@ -16,15 +16,15 @@ export default function AppIndex() {
   const { completedProjects } = useLoaderData<typeof loader>();
   return (
     <Container className="my-10" width={"mobMax"}>
-      <div className="gap-x-6 lg:grid lg:grid-cols-2">
-        <div className="lg:sticky lg:top-[64px] lg:max-h-[calc(100vh-64px)]">
+      <div className="relative min-h-screen gap-x-6 lg:grid lg:grid-cols-2">
+        <div className="lg:sticky lg:top-[64px] lg:max-h-[calc(100vh-64px)] lg:h-fit">
           <Portrait />
-        </div>
-        <div>
           <H2>Projects</H2>
           <p className="mb-8">
-            I design and build accessible, engaging and delightful digital experiences.
-          </p>
+          I design and build accessible, engaging and delightful digital experiences.
+        </p>
+        </div>
+        <div>
           <ProjectList projects={completedProjects} />
         </div>
       </div>
