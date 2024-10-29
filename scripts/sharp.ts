@@ -1,6 +1,6 @@
 import sharp from "sharp";
 import { readFileSync, existsSync, mkdirSync } from "node:fs";
-import { extname, dirname, join } from "node:path";
+import { extname, parse } from "node:path";
 
 //### Recommended Image Size Breakpoints
 //
@@ -20,6 +20,7 @@ import { extname, dirname, join } from "node:path";
 
 export class Image {
 	filePath: string;
+	fileName: string;
 	dir: string;
 	outDir: string;
 	imageBuffer: Buffer;
@@ -28,8 +29,9 @@ export class Image {
 
 	constructor(filePath: string) {
 		this.filePath = filePath;
-		this.dir = dirname(filePath);
-		this.outDir = `${this.dir}/resized`;
+		this.fileName = parse(filePath).name;
+		this.dir = parse(filePath).dir;
+		this.outDir = `${this.dir}/${this.fileName}/resized`;
 		this.ensureOutdir();
 
 		try {
@@ -71,7 +73,7 @@ export class Image {
 			// Check if directory exists
 			if (!existsSync(this.outDir)) {
 				// Create directory if it doesn't exist
-				mkdirSync(this.outDir);
+				mkdirSync(this.outDir, { recursive: true });
 				console.log(`Created directory: ${this.outDir}`);
 			} else {
 				console.log(`Directory already exists: ${this.outDir}`);
