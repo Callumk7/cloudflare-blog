@@ -12,7 +12,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const navigate = useNavigate();
   return (
     <Card
-      className="pb-14 transition-colors ease-in-out group content-stretch hover:bg-background-hover"
+      className="pb-14 transition-colors cursor-pointer ease-in-out group content-stretch hover:bg-background-hover"
       flex
       onClick={() => navigate(`/projects/${project.slug}`)}
     >
