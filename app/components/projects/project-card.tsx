@@ -2,18 +2,19 @@ import { Project } from "@/types";
 import { Card } from "../layout/card";
 import { Github } from "../icons/github";
 import { Button } from "../ui/button";
+import { useNavigate } from "@remix-run/react";
 
 interface ProjectCardProps {
   project: Project;
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const navigate = useNavigate();
   return (
     <Card
       className="pb-14 transition-colors ease-in-out group content-stretch hover:bg-background-hover"
       flex
-      asLink
-      to={`/projects/${project.slug}`}
+      onClick={() => navigate(`/projects/${project.slug}`)}
     >
       <h1 className="pb-3 text-2xl font-bold transition-colors duration-100 ease-in-out group-hover:text-violet-400 font-syne text-primary-1">
         {project.name}
