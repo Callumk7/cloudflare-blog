@@ -3,6 +3,9 @@
 	"organizeImports": {
 		"enabled": true
 	},
+	"files": {
+		"ignore": ["content/**/*", "content/.obsidian/**/*", "files/**/*", "build/**/*"]
+	},
 	"linter": {
 		"enabled": true,
 		"ignore": ["app/entry.client.tsx", "app/entry.server.tsx"],
@@ -24,7 +27,7 @@
 		"indentWidth": 4,
 		"lineWidth": 90,
 		"lineEnding": "lf",
-		"ignore": ["app/data/**/*", "build/**/*", "content/**/*", "files/**/*"]
+		"ignore": ["app/data/**/*"]
 	},
 	"overrides": [
 		{

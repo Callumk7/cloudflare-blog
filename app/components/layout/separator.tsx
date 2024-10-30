@@ -1,6 +1,6 @@
-import { forwardRef } from "react";
 import * as SeparatorPrimitive from "@radix-ui/react-separator";
 import clsx from "clsx";
+import { forwardRef } from "react";
 
 const Separator = forwardRef<
   React.ElementRef<typeof SeparatorPrimitive.Root>,

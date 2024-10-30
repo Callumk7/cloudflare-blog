@@ -1,8 +1,8 @@
 import ProjectsIndex from "@/routes/_app.projects._index";
+import { Project } from "@/types";
+import { createRemixStub } from "@remix-run/testing";
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { createRemixStub } from "@remix-run/testing";
-import { Project } from "@/types";
 
 const mockProjects: Project[] = [
   {

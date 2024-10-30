@@ -2,7 +2,7 @@ import { env } from "@/env";
 import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 
 import { readFileSync, readdirSync, statSync } from "node:fs";
-import { join, extname, relative, sep } from "node:path";
+import { extname, join, relative, sep } from "node:path";
 import { Image } from "./sharp";
 
 const IMAGE_PATH = join(process.cwd(), "files", "images");

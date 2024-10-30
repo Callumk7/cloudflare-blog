@@ -1,3 +1,5 @@
+import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
+import clsx from "clsx";
 import useEmblaCarousel, { type UseEmblaCarouselType } from "embla-carousel-react";
 import {
   ComponentProps,
@@ -11,8 +13,6 @@ import {
   useState,
 } from "react";
 import { Button } from "./button";
-import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
-import clsx from "clsx";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -130,16 +130,15 @@ const Carousel = forwardRef<
           canScrollNext,
         }}
       >
-        <div
+        <section
           ref={ref}
           onKeyDownCapture={handleKeyDown}
           className={clsx("relative", className)}
-          role="region"
           aria-roledescription="carousel"
           {...props}
         >
           {children}
-        </div>
+        </section>
       </CarouselContext.Provider>
     );
   },

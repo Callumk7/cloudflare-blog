@@ -1,12 +1,12 @@
 import { Link, useLocation, useNavigation } from "@remix-run/react";
-import { SocialLinks } from "./social-links";
 import clsx from "clsx";
+import { useEffect, useState } from "react";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from "../layout/collapsible";
-import { useEffect, useState } from "react";
+import { SocialLinks } from "./social-links";
 
 const links = [
   {

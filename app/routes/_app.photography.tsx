@@ -1,8 +1,8 @@
 import { getRandomPhotos } from "@/api/unsplash";
 import { PhotoPreview } from "@/components/photography/photo-preview";
 import { Admonition } from "@/components/ui/admonition";
-import { useLoaderData } from "@remix-run/react";
 import { LoaderFunctionArgs, json } from "@remix-run/cloudflare";
+import { useLoaderData } from "@remix-run/react";
 
 export const loader = async ({ context }: LoaderFunctionArgs) => {
   const photos = await getRandomPhotos(context, 25, "portrait");

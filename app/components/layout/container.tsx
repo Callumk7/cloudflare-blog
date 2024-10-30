@@ -1,5 +1,5 @@
+import { VariantProps, cva } from "class-variance-authority";
 import clsx from "clsx";
-import { cva, VariantProps } from "class-variance-authority";
 
 const containerVariants = cva("space-y-6", {
   variants: {

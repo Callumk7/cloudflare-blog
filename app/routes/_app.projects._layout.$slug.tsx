@@ -1,8 +1,6 @@
+import { getProjectBySlug, getProjectImageSrcs } from "@/api/projects";
 import { Container } from "@/components/layout/container";
 import { PostBody } from "@/components/posts/post-body";
-import { LoaderFunctionArgs, json, redirect } from "@remix-run/cloudflare";
-import { useLoaderData } from "@remix-run/react";
-import { getProjectBySlug, getProjectImageSrcs } from "@/api/projects";
 import {
   Carousel,
   CarouselContent,
@@ -10,13 +8,18 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { LoaderFunctionArgs, json, redirect } from "@remix-run/cloudflare";
+import { useLoaderData } from "@remix-run/react";
+import invariant from "tiny-invariant";
 
 ///
 /// LOADER
 ///
 export const loader = async ({ context, params }: LoaderFunctionArgs) => {
   const slug = params.slug;
-  const project = await getProjectBySlug(context, slug!);
+  invariant(slug, "Slug must exist");
+
+  const project = await getProjectBySlug(context, slug);
 
   if (!project) {
     return redirect("/projects");

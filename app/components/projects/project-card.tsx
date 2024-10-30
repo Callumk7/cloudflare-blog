@@ -1,8 +1,8 @@
 import { Project } from "@/types";
-import { Card } from "../layout/card";
-import { Github } from "../icons/github";
-import { Button } from "../ui/button";
 import { useNavigate } from "@remix-run/react";
+import { Github } from "../icons/github";
+import { Card } from "../layout/card";
+import { Button } from "../ui/button";
 
 interface ProjectCardProps {
   project: Project;
