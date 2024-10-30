@@ -12,6 +12,7 @@
 		"lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
 		"start": "wrangler pages dev ./build/client --kv=POSTS",
 		"typecheck": "tsc",
+		"test": "vitest",
 		"typegen": "wrangler types"
 	},
 	"dependencies": {
@@ -40,7 +41,11 @@
 		"@biomejs/biome": "^1.9.4",
 		"@cloudflare/workers-types": "^4.20241022.0",
 		"@remix-run/dev": "^2.13.1",
+		"@remix-run/testing": "^2.13.1",
 		"@tailwindcss/typography": "^0.5.15",
+		"@testing-library/jest-dom": "^6.6.2",
+		"@testing-library/react": "^16.0.1",
+		"@testing-library/user-event": "^14.5.2",
 		"@types/react": "^18.3.12",
 		"@types/react-dom": "^18.3.1",
 		"autoprefixer": "^10.4.20",
@@ -64,6 +69,7 @@
 		"unified": "^11.0.5",
 		"vite": "^5.4.10",
 		"vite-tsconfig-paths": "^5.0.1",
+		"vitest": "^2.1.4",
 		"wrangler": "^3.83.0"
 	},
 	"engines": {
