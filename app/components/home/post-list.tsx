@@ -1,6 +1,6 @@
 import { Post } from "@/types";
-import { PostPreview } from "../posts/post-preview";
 import { Link } from "@remix-run/react";
+import { PostPreview } from "../posts/post-preview";
 
 interface PostListProps {
   posts: Post[];

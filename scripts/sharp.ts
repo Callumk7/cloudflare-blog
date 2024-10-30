@@ -1,6 +1,6 @@
-import sharp from "sharp";
-import { readFileSync, existsSync, mkdirSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync } from "node:fs";
 import { extname, parse } from "node:path";
+import sharp from "sharp";
 
 //### Recommended Image Size Breakpoints
 //

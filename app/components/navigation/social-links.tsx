@@ -1,8 +1,8 @@
 import clsx from "clsx";
+import { Github } from "../icons/github";
 import { LinkedIn } from "../icons/linkedIn";
 import { MailIcon } from "../icons/mail";
 import { Twitter } from "../icons/twitter";
-import { Github } from "../icons/github";
 
 export function SocialLinks({ className }: { className?: string }) {
   return (

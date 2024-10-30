@@ -1,7 +1,6 @@
 import { getAllProjectData, getProjectPosts } from "@/api/projects";
 import { Card } from "@/components/layout/card";
 import { H2 } from "@/components/layout/headers";
-import { Separator } from "@/components/layout/separator";
 import { Pill } from "@/components/tags/pill";
 import { Post, Project } from "@/types";
 import { LoaderFunctionArgs, json } from "@remix-run/cloudflare";

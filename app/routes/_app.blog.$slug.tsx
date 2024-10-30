@@ -3,10 +3,10 @@ import { PostTitle } from "@/components/posts/post-title";
 import { LoaderFunctionArgs, json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
 
+import { getPostBySlug } from "@/api/posts";
 // import "@/styles/prism.css";
 import { CoverImage } from "@/components/posts/cover-image";
 import { Pill } from "@/components/tags/pill";
-import { getPostBySlug } from "@/api/posts";
 
 export const loader = async ({ context, params }: LoaderFunctionArgs) => {
   const slug = params.slug;

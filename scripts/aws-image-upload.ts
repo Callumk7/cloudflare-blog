@@ -2,7 +2,7 @@ import { env } from "@/env";
 import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 
 import { readFileSync, readdirSync, statSync } from "node:fs";
-import { join, extname, relative, sep } from "node:path";
+import { extname, join, relative, sep } from "node:path";
 import { Image } from "./sharp";
 
 const IMAGE_PATH = join(process.cwd(), "files", "images");
@@ -20,31 +20,31 @@ const s3 = new S3Client({
 
 // Function to recursively get all image file paths
 const getImageFilePaths = (
-    dir: string,
-    fileTypes: string[] = [".jpg", ".jpeg", ".png"],
-    fileList: string[] = [],
+	dir: string,
+	fileTypes: string[] = [".jpg", ".jpeg", ".png"],
+	fileList: string[] = [],
 ): string[] => {
-    const files = readdirSync(dir);
-    
-    // Split the path to check if 'resized' is a top-level directory
-    const pathParts = dir.split(sep);
-    if (pathParts[pathParts.length - 1] === 'resized') {
-        return fileList;
-    }
+	const files = readdirSync(dir);
 
-    for (const file of files) {
-        const absolutePath = join(dir, file);
-        if (statSync(absolutePath).isDirectory()) {
-            // Skip the 'resized' directory
-            if (file !== 'resized') {
-                getImageFilePaths(absolutePath, fileTypes, fileList);
-            }
-        } else if (fileTypes.includes(extname(file).toLowerCase())) {
-            fileList.push(absolutePath);
-        }
-    }
+	// Split the path to check if 'resized' is a top-level directory
+	const pathParts = dir.split(sep);
+	if (pathParts[pathParts.length - 1] === "resized") {
+		return fileList;
+	}
 
-    return fileList;
+	for (const file of files) {
+		const absolutePath = join(dir, file);
+		if (statSync(absolutePath).isDirectory()) {
+			// Skip the 'resized' directory
+			if (file !== "resized") {
+				getImageFilePaths(absolutePath, fileTypes, fileList);
+			}
+		} else if (fileTypes.includes(extname(file).toLowerCase())) {
+			fileList.push(absolutePath);
+		}
+	}
+
+	return fileList;
 };
 
 const filePaths = getImageFilePaths(IMAGE_PATH);

@@ -1,10 +1,10 @@
-import { unified } from "unified";
-import parse from "remark-parse";
 import remarkCallout from "@r4ai/remark-callout";
-import rehype from "remark-rehype";
-import remarkGfm from "remark-gfm";
-import stringify from "rehype-stringify";
 import rehypeShiki from "@shikijs/rehype";
+import stringify from "rehype-stringify";
+import remarkGfm from "remark-gfm";
+import parse from "remark-parse";
+import rehype from "remark-rehype";
+import { unified } from "unified";
 
 // switched to shiki from prism
 export async function markdownToHtml(markdown: string) {
