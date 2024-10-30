@@ -21,8 +21,8 @@ export default function AppIndex() {
           <Portrait />
           <H2>Projects</H2>
           <p className="mb-8">
-          I design and build accessible, engaging and delightful digital experiences.
-        </p>
+            I design and build accessible, engaging and delightful digital experiences.
+          </p>
         </div>
         <div>
           <ProjectList projects={completedProjects} />

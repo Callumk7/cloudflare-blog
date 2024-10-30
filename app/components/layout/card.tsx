@@ -6,12 +6,7 @@ interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   flex?: boolean;
 }
 
-export function Card({
-  children,
-  className,
-  flex = false,
-  ...props
-}: CardProps) {
+export function Card({ children, className, flex = false, ...props }: CardProps) {
   const cn = clsx(
     className,
     { "flex flex-col gap-4": flex },

@@ -70,7 +70,7 @@ describe("Projects route", async () => {
   test("It displays all projects by default", async () => {
     setupRoute();
 
-    await waitFor(() => screen.findByText("Portfolio Website"))
+    await waitFor(() => screen.findByText("Portfolio Website"));
 
     expect(screen.getByText("Portfolio Website")).toBeInTheDocument();
     expect(screen.getByText("Task Management App")).toBeInTheDocument();
@@ -79,7 +79,7 @@ describe("Projects route", async () => {
 
   test("It filters projects based on search input", async () => {
     const { user } = setupRoute();
-    await waitFor(() => screen.findByText("Portfolio Website"))
+    await waitFor(() => screen.findByText("Portfolio Website"));
 
     const searchInput = screen.getByLabelText("Search");
     await user.type(searchInput, "weather");

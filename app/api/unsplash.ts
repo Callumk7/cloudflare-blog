@@ -10,8 +10,7 @@ export async function getRandomPhotos(
 	query?: string,
 ) {
 	const endpoint = "photos/random";
-	let requestUrl =
-		`${url}/${endpoint}?count=${count.toString()}&orientation=${orientation}`;
+	let requestUrl = `${url}/${endpoint}?count=${count.toString()}&orientation=${orientation}`;
 
 	if (query) {
 		requestUrl += `&query=${query}`;
